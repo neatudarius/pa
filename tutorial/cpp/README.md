@@ -8,17 +8,15 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
  
 # STL
 
-## iostream
+## IO
+### iostream
 
-## fstream
+### fstream
 
-## algorithm
+## Algorithms
 
-### containters
-``` cpp
-#include <vector>
-```
 
+## Containters
 
 #### std::vector
 ``` cpp
@@ -36,5 +34,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwNDA5MjA3XX0=
+eyJoaXN0b3J5IjpbLTEyOTc5OTIzNDBdfQ==
 -->
