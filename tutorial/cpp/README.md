@@ -43,10 +43,10 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 ### sorting
 #### std::sort
+### std::nth_elementh
 
 ### std::reverse
 ### std::find
-### std::nth_elementh
 ### std::lower_bound
 ### std::upper_bound
 ### std::swap
@@ -55,5 +55,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #### std::min_element/std::max_element
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTI2Mjc1MDVdfQ==
+eyJoaXN0b3J5IjpbLTExODQ1MDE5M119
 -->
