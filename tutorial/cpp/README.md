@@ -4,6 +4,8 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 # Intro
 ## C++ 11
 
+## Makefile
+
 # class vs struct la PA
  
 # STL
@@ -32,16 +34,19 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::queue
 ### std::set
 ### std::map
-### std::priority_queue
+### std::priority_queue ???
 
 ## Standard algorithms
 ``` cpp
 #include <algorithm>
 ```
+### std::sort
+### std::reverse
+### std::sort
 # Recomandari
 ## skel
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM0MTIxMF19
+eyJoaXN0b3J5IjpbLTMzNzQ5MTUxXX0=
 -->
