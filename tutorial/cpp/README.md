@@ -20,9 +20,10 @@
 #### std::set
 #### std::map
 #### std::priority_queue
+
 # Recomandari
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc5NTA3ODZdfQ==
+eyJoaXN0b3J5IjpbMjgwODI2NjY4XX0=
 -->
