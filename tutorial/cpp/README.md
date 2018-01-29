@@ -46,6 +46,8 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::nth_elementh
 ### std::lower_bound
 ### std::upper_bound
+### std::swap
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2MjIyNzU4XX0=
+eyJoaXN0b3J5IjpbNjg4MDI0OTIwXX0=
 -->
