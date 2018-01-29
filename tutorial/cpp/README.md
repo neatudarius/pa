@@ -15,12 +15,19 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ## algorithm
 
 ### containters
+``` cpp
+#include <vector>
+```
+
+
 #### std::vector
 ``` cpp
 #include <vector>
 ```
 
 #### std::stack
+
+
 #### std::queue
 #### std::set
 #### std::map
@@ -31,5 +38,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE2NjA2MzZdfQ==
+eyJoaXN0b3J5IjpbLTE5NjUyMjYwMjldfQ==
 -->
