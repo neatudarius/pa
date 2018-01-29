@@ -22,8 +22,9 @@
 #### std::priority_queue
 
 # Recomandari
+## skel
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgwODI2NjY4XX0=
+eyJoaXN0b3J5IjpbLTMxNDgzNzI4NV19
 -->
