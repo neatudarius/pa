@@ -34,15 +34,15 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ```
 
 ### std::stack
-#### std::queue
-#### std::set
-#### std::map
-#### std::priority_queue
+### std::queue
+### std::set
+### std::map
+### std::priority_queue
 
 # Recomandari
 ## skel
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDM4MDU5NTldfQ==
+eyJoaXN0b3J5IjpbLTc4NzA0MzY5N119
 -->
