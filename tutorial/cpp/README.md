@@ -48,7 +48,7 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### modifying sequence
 #### std::reverse
 
-### searchi
+### searching
 #### std::find
 #### std::lower_bound
 #### std::upper_bound
@@ -60,5 +60,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #### std::min_element/std::max_element
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDg4MTI4NF19
+eyJoaXN0b3J5IjpbLTEwMjc1NTk2ODNdfQ==
 -->
