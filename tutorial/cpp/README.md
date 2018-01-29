@@ -40,7 +40,10 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ``` cpp
 #include <algorithm>
 ```
-### std::sort
+
+### sorting
+#### std::sort
+
 ### std::reverse
 ### std::find
 ### std::nth_elementh
@@ -52,5 +55,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #### std::min_element/std::max_element
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxMjA3NTEzXX0=
+eyJoaXN0b3J5IjpbLTEzNTI2Mjc1MDVdfQ==
 -->
