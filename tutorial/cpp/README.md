@@ -41,6 +41,10 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #include <algorithm>
 ```
 
+
+### basic (non-sequence)
+#### std::min / std::max
+
 ### sorting
 #### std::sort
 #### std::nth_elementh
@@ -52,13 +56,8 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #### std::find
 #### std::lower_bound
 #### std::upper_bound
-
-
-### std::swap
-### min/max operations
-#### std::min / std::max
 #### std::min_element/std::max_element
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc1NTk2ODNdfQ==
+eyJoaXN0b3J5IjpbNzAxNTY4NTM5XX0=
 -->
