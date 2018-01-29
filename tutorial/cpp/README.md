@@ -42,11 +42,10 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ```
 ### std::sort
 ### std::reverse
-### std::sort
-# Recomandari
-## skel
-
-# Exemple
+### std::find
+### std::nth_elementh
+### std::lower_bound
+###
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNzQ5MTUxXX0=
+eyJoaXN0b3J5IjpbLTM5NDcwMTEzNl19
 -->
