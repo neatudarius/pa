@@ -26,10 +26,11 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #include <utility>
 ```
 ### std::vector
+cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 ``` cpp
 #include <vector>
 ```
-doc: cpp
+
 
 ### std::stack
 ### std::queue
@@ -63,5 +64,5 @@ doc: cpp
 # Recomandari
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDY0NDQxNDJdfQ==
+eyJoaXN0b3J5IjpbLTUwMzA1NTAwOF19
 -->
