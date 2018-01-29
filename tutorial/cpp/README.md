@@ -58,6 +58,9 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 #### std::reverse
 #### std::remove
 #### std::fill
+
+# Recomandari
+# Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwODI4Mzk5NF19
+eyJoaXN0b3J5IjpbLTEwNTk1MDUzOTldfQ==
 -->
