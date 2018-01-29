@@ -49,8 +49,8 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::swap
 ### min/max operations
 #### std::min / std::max
-#### std::min_element
+#### std::min_element/std::max_element
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTYzMzM4Nl19
+eyJoaXN0b3J5IjpbNzkxMjA3NTEzXX0=
 -->
