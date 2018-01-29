@@ -47,7 +47,8 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::lower_bound
 ### std::upper_bound
 ### std::swap
-### 
+### std
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg4MDI0OTIwXX0=
+eyJoaXN0b3J5IjpbMTYwMDc1MTkxMV19
 -->
