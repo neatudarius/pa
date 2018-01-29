@@ -19,13 +19,21 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ```
 
 ## Containters
-###
-#### std::vector
+### std::pair
+``` cpp
+#include <utility>
+```
+
+### std::tuple
+``` cpp
+#include <utility>
+```
+### std::vector
 ``` cpp
 #include <vector>
 ```
 
-#### std::stack
+### std::stack
 #### std::queue
 #### std::set
 #### std::map
@@ -36,5 +44,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDExNjc1Ml19
+eyJoaXN0b3J5IjpbLTE2MDM4MDU5NTldfQ==
 -->
