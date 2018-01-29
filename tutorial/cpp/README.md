@@ -13,11 +13,6 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 ### fstream
 
-## Algorithms
-``` cpp
-#include <algorithm>
-```
-
 ## Containters
 ### std::pair
 ``` cpp
@@ -39,10 +34,14 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::map
 ### std::priority_queue
 
+## Standard algorithms
+``` cpp
+#include <algorithm>
+```
 # Recomandari
 ## skel
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NzA0MzY5N119
+eyJoaXN0b3J5IjpbLTE3ODM0MTIxMF19
 -->
