@@ -26,8 +26,6 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ```
 
 #### std::stack
-
-
 #### std::queue
 #### std::set
 #### std::map
@@ -38,5 +36,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjUyMjYwMjldfQ==
+eyJoaXN0b3J5IjpbNDEwNDA5MjA3XX0=
 -->
