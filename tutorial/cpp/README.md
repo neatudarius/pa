@@ -29,6 +29,7 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ``` cpp
 #include <vector>
 ```
+doc: cpp
 
 ### std::stack
 ### std::queue
@@ -62,5 +63,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 # Recomandari
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk1MDUzOTldfQ==
+eyJoaXN0b3J5IjpbLTE2MDY0NDQxNDJdfQ==
 -->
