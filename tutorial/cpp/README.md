@@ -1,6 +1,7 @@
 # C++ tutorial
 
 # Intro
+## C++ 11
 
 # class vs struct la PA
  
@@ -14,10 +15,14 @@
 
 ### containters
 #### std::vector
-
+#### std::stack
+#### std::queue
+#### std::set
+#### std::map
+#### std::priority_queue
 # Recomandari
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDU2NzExMV19
+eyJoaXN0b3J5IjpbLTE1OTc5NTA3ODZdfQ==
 -->
