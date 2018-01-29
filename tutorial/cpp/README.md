@@ -16,8 +16,9 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 ### containters
 #### std::vector
-
-    enter code here
+``` cpp
+#include <vector>
+```
 
 #### std::stack
 #### std::queue
@@ -30,5 +31,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY4OTU0MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2OTE2NjA2MzZdfQ==
 -->
