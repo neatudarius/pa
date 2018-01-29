@@ -14,10 +14,12 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### fstream
 
 ## Algorithms
-
+``` cpp
+#include <algorithm>
+```
 
 ## Containters
-
+###
 #### std::vector
 ``` cpp
 #include <vector>
@@ -34,5 +36,5 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTc5OTIzNDBdfQ==
+eyJoaXN0b3J5IjpbMTYyMDExNjc1Ml19
 -->
