@@ -47,8 +47,9 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 ### std::lower_bound
 ### std::upper_bound
 ### std::swap
-### std
+### min/max operations
+#### 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDc1MTkxMV19
+eyJoaXN0b3J5IjpbLTE2NzQ0NzMxODNdfQ==
 -->
