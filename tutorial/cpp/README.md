@@ -1,4 +1,5 @@
 # C++ tutorial
+Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 # Intro
 ## C++ 11
@@ -26,5 +27,5 @@
 
 # Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDgzNzI4NV19
+eyJoaXN0b3J5IjpbMTYyNDY1Njc5M119
 -->
