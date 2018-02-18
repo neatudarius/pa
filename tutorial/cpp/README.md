@@ -36,7 +36,7 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 ### std::queue
 ### std::set
 ### std::map
-### std::priority_queue ???
+### std::priority_queue
 
 ## Standard algorithms
 ``` cpp
@@ -61,8 +61,8 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::remove
 #### std::fill
 
-# Recomandari
-# Exemple
+# Recomandari & exemple
+Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzA1NTAwOF19
+eyJoaXN0b3J5IjpbMTkxMzQ1NDAxN119
 -->
