@@ -62,7 +62,9 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 # Recomandari & exemple
-Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale
+Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
+http://www.cplusplus.com/
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzQ1NDAxN119
+eyJoaXN0b3J5IjpbMzU3MjQzNDI1XX0=
 -->
