@@ -3,12 +3,21 @@
 
 ## IO
 ### iostream
+``` cpp
+#include <iostream>
+```
 ### fstream
+``` cpp
+#include <fstream>
+```
 ### streams vs libc
+TODO
 ### examples
+TODO
 ### std vs file
+TODO
 ### parsing
-
+T
 ## containters
 ## iterators
 
@@ -57,5 +66,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY1MzgxODZdfQ==
+eyJoaXN0b3J5IjpbLTY0NTg0OTA1OF19
 -->
