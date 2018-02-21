@@ -28,7 +28,11 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
    - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
       - functioneaza fix ca map (interfata)
       - map tine cheile sortate
-         - daca iterez    
+         - in spate implementarea foloseste o structura arborescenta 
+         - daca iterez un map obtin cheile sortate
+         - pentru ca mentine aceasta proprietate operatiile de insert/delete/find au $O(log n)$   
+      - unordered_map nu tine cheile sortate 
+         - chiar este un hashta  
 
     
 ## Makefile
@@ -96,5 +100,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTE0NjEzMTRdfQ==
+eyJoaXN0b3J5IjpbMTYyNjM3MzA3N119
 -->
