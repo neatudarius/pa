@@ -51,6 +51,7 @@ Recomandarea este sa nu folositi schelet.
     - puteti avea insa o sursa proprie, un skelet minimal pe care il puteti folosi oricand; este un exemplu mai jos
 
 ### Standard skel
+
 ### Fancy skel :D    
           
 ## Makefile
@@ -126,5 +127,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNzExMTg4NF19
+eyJoaXN0b3J5IjpbLTgyMjQ0ODkwMl19
 -->
