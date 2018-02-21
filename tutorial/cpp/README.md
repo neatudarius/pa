@@ -13,7 +13,8 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
   - nu trebuie sa stim tot STL, ci doar o (mica) parte din el
  
  ### De ce C++11?
- 
+   - raspunsul scurt este: NU e necesar
+   - putem insa sa ne facem codul mai scurt/clar
     
 ## Makefile
 
@@ -80,5 +81,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDQ4ODUxMl19
+eyJoaXN0b3J5IjpbMTg2NjcwNzA5XX0=
 -->
