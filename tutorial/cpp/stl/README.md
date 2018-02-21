@@ -25,23 +25,23 @@ TODO
 TODO
 
  ## utils
-### std::pair
+- std::pair
 ``` cpp
 #include <utility>
 ```
-### std::tuple
+- std::tuple
 ``` cpp
 #include <utility>
 ```
 
 ## containers
-### std::stack
+- std::stack
 cppreference: [std::stack](http://en.cppreference.com/w/cpp/container/stack)
 ``` cpp
 #include <stack>
 ```
 
-### std::map
+- std::map
 cppreference: [std::map](http://en.cppreference.com/w/cpp/container/map)
 ``` cpp
 #include <map>
@@ -100,5 +100,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIzOTMyMDBdfQ==
+eyJoaXN0b3J5IjpbLTYwNjk3NDAyMF19
 -->
