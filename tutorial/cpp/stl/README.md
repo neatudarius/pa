@@ -27,14 +27,13 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #include <vector>
 ```
 
-
 ### std::stack
 ### std::queue
 ### std::set
 ### std::map
 ### std::priority_queue
 
-## Standard algorithms
+## standard algorithms
 ``` cpp
 #include <algorithm>
 ```
@@ -58,5 +57,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg1MTkzNTZdfQ==
+eyJoaXN0b3J5IjpbLTEyNDY1MzgxODZdfQ==
 -->
