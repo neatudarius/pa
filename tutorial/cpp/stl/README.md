@@ -58,24 +58,23 @@ cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
 #include <queue>
 ```
 
-
 - std::set
 cppreference: [std::set](http://en.cppreference.com/w/cpp/container/set)
-``` cpp
-#include <set>
-```
+	``` cpp
+	#include <set>
+	```
 
 - std::unordered_map (C++11)
 cppreference: [std::unordered_map](http://en.cppreference.com/w/cpp/container/unordered_map)
-``` cpp
-#include <unordered_map>
-```
+	``` cpp
+	#include <unordered_map>
+	```
 
 - std::vector
-cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
-``` cpp
-#include <vector>
-```
+	cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+	``` cpp
+	#include <vector>
+	```
 ## standard algorithms
 ``` cpp
 #include <algorithm>
@@ -100,5 +99,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
   - std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDAxMTYyOF19
+eyJoaXN0b3J5IjpbMTE3MTU4ODk4Nl19
 -->
