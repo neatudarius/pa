@@ -24,7 +24,7 @@ TODO
 ## iterators
 TODO
 
-## containers / ds / utils
+## containers / data structures
 ### std::pair
 ``` cpp
 #include <utility>
@@ -70,5 +70,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzA3MTMxMjJdfQ==
+eyJoaXN0b3J5IjpbMTI1ODg3ODQ1XX0=
 -->
