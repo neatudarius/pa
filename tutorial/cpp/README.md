@@ -2,11 +2,17 @@
 Responsabil: [Darius Neațu](neatudarius@gmail.com)
 
 # Intro
-## C++? C++11?
+## C++
+### De ce C++? 
 La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
   - dorim sa avem cat mai mult timp alocat pentru etapa de gandire/cautare algoritm, iar implementarea sa fie scurta
   - daca implementare este scurta, atunci si debug faci mai usor sau ai sanse mai mari sa nu faci prostii din prima
-  - 
+  - STL este mai prietenos decat implementare de SD din Java
+  - ai mai mult control
+  - nu trebuie sa stim C++, ci doar cateva concepte de baza
+  - nu trebuie sa stim tot STL, ci doar o (mica) parte din el
+ 
+ ### De ce C++1
     
 ## Makefile
 
@@ -73,5 +79,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyNjExMzgwXX0=
+eyJoaXN0b3J5IjpbLTIxMjAzNDgxMTRdfQ==
 -->
