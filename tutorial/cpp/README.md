@@ -130,9 +130,9 @@ TODO
 
 # Recomandari & exemple
 Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
-http://www.cplusplus.com/
-http://en.cppreference.com/w/
+  - http://www.cplusplus.com/
+  - http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjI1MTExMl19
+eyJoaXN0b3J5IjpbMzY1OTMyMDQwXX0=
 -->
