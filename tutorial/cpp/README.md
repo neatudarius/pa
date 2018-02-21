@@ -70,7 +70,7 @@ int main() {
     // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
     // de mai sus decomentate
     
-	cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
+    cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
 
 	return 0;
 }
@@ -87,7 +87,7 @@ int main() {
     // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
     // de mai sus decomentate
     
-	cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
+    cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
 
 	return 0;
 }
@@ -122,9 +122,11 @@ run: build
 
 .PHONY: clean
 clean:
-	rm -f *.o *.exe ```
+	rm -f *.o *.exe 
+```
 
 # class vs struct la PA
+TODO
 
 # Recomandari & exemple
 Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
@@ -132,5 +134,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODcyMjg5OTBdfQ==
+eyJoaXN0b3J5IjpbMTAyNjI1MTExMl19
 -->
