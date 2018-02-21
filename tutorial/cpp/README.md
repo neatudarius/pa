@@ -12,9 +12,11 @@ Responsabil: [Darius Neatu](neatudarius@gmail.com)
 
 ## IO
 ### iostream
-
 ### fstream
-
+### streams vs libc
+### examples
+### std vs file
+### parsare
 ## Containters
 ### std::pair
 ``` cpp
@@ -66,5 +68,5 @@ Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
 http://www.cplusplus.com/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU3MjQzNDI1XX0=
+eyJoaXN0b3J5IjpbLTIwMDczNDg1MThdfQ==
 -->
