@@ -93,11 +93,11 @@ int main() {
 }
 ```          
 ## Makefile
-### Standard Makefile
 Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
 
 Puteti salva urmatorul Makefile undeva in `~/utils/MakefileCpp`. Rulati comanda `cp ~/utils/MakefileCpp ./Makefile` sa il copiati unde doriti.
 
+### Standard Makefile
 ``` bash
 # doar linia urmatoare e nevoie sa o modificati cu sursa pe care o compilati
 SRC = skel.cpp
@@ -187,5 +187,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5Mzg3NTUwOF19
+eyJoaXN0b3J5IjpbMTAzMDYwMDc4Ml19
 -->
