@@ -41,7 +41,10 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
 ## skel
 Recomandarea este sa nu folositi schelet.
   - invatati sa scrieti voi singuri de la 0
-     -  cel putin la primele 6 laboratoare de PA, codul e foarte foarte scurt pentru o problema. Deci este     
+     -  cel putin la primele 6 laboratoare de PA, codul e foarte foarte scurt pentru o problema. Deci poate chiar este mai complicat sa te uiti in schelet si sa il intelegi decat sa scrii tu alea 10 linii :D.
+     - ca sa sprijin asta dau un exemplu: citire & stocarea inputului in forma potrivita face parte din intelegerea problemei!
+       - daca in schelet iti da un map cu cheie string si valoare o lista de int-uri, poate esti tentat sa nu te intrebi daca chiar asa e bine sa il stochezi 
+          
 ## Makefile
 ### Standard Makefile
 Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
@@ -115,5 +118,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzIyNDU1NjBdfQ==
+eyJoaXN0b3J5IjpbLTIwNjE4MDc5MTNdfQ==
 -->
