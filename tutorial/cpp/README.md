@@ -25,7 +25,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
 
      map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
 ```
-   - (probabil) 
+   - (probabil
 
     
 ## Makefile
@@ -93,5 +93,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MzQ0NzY5Ml19
+eyJoaXN0b3J5IjpbLTE2Mzk5MzIzNDldfQ==
 -->
