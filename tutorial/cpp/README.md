@@ -16,20 +16,20 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
    - raspunsul scurt este: NU e necesar
    - pentru compilare trebuie sa pui `-std=c++11` ca argument a lui g++
    - mentionez cateva features care iti pot face viata mai usoara
-   - putem insa sa ne facem codul mai scurt/clar prin folosirea lui auto :D
-``` cpp
-    map<int, int> :: iterator f() {...}
-    // ...
-    auto it = f(); // declaratia asta este mai scurta
-                   // poate am uitat ce tip returneaza f  
-                   // (adica stiu ce este - un iterator, 
-                   // dar nu mai stiu cum se scrie)
+     - putem insa sa ne facem codul mai scurt/clar prin folosirea lui auto :D
+		``` cpp
+		    map<int, int> :: iterator f() {...}
+		    // ...
+		    auto it = f(); // declaratia asta este mai scurta
+		                   // poate am uitat ce tip returneaza f  
+		                   // (adica stiu ce este - un iterator, 
+		                   // dar nu mai stiu cum se scrie)
 
-     map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
-```
-   - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
-      - functioneaza fix ca map (interfata)
-      - map tine cheile sortate
+		     map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
+		```
+     - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
+        - functioneaza fix ca map (interfata)
+        - map tine cheile sortate
          - in spate implementarea foloseste o structura arborescenta 
          - daca iterez un map obtin cheile sortate
          - pentru ca mentine aceasta proprietate, operatiile de insert/delete/find au $O(log n)$   
@@ -104,5 +104,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxODcyNjUwN119
+eyJoaXN0b3J5IjpbLTYwOTc0NDkxXX0=
 -->
