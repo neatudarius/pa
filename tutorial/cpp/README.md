@@ -4,7 +4,8 @@ Responsabil: [Darius Neațu](neatudarius@gmail.com)
 # Intro
 ## C++ 11
 La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
-  -\  
+  - dorim sa avem cat mai 
+    
 ## Makefile
 
 # class vs struct la PA
@@ -70,5 +71,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDM1ODMwMzVdfQ==
+eyJoaXN0b3J5IjpbLTEzNDkyOTEyOTZdfQ==
 -->
