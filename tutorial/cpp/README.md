@@ -64,7 +64,7 @@ Recomandarea este sa nu folositi schelet.
 using namespace std;
 
 int main() {
-	freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
+    freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
     freopen("gigel.out", "w", stdout);  // daca las linia asta afisez in fisier
     
     // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
@@ -81,7 +81,7 @@ int main() {
 using namespace std;
 
 int main() {
-	freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
+    freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
     freopen("gigel.out", "w", stdout);  // daca las linia asta afisez in fisier
     
     // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
@@ -187,5 +187,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMDYwMDc4Ml19
+eyJoaXN0b3J5IjpbNzY2MzU5OTk4XX0=
 -->
