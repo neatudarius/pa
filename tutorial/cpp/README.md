@@ -15,9 +15,13 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
  ### De ce C++11?
    - raspunsul scurt este: NU e necesar
    - putem insa sa ne facem codul mai scurt/clar prin folosirea lui auto :D
-     ``` cpp
+`` cpp
     map<int, int> :: iterator f() {...}
-    ...
+    // ...
+    auto it = f(); // declaratia asta este mai scurta
+                   // poate am uitat ce tip returneaza f(adica stiu ce este - un iterator, dar nu mai stiu cum se scrie)
+
+     map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
      ```
 
     
@@ -86,5 +90,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzgxMDc5NDddfQ==
+eyJoaXN0b3J5IjpbLTExNTcyODk1MjVdfQ==
 -->
