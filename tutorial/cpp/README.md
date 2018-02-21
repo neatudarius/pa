@@ -46,7 +46,8 @@ Recomandarea este sa nu folositi schelet.
        - daca in schelet iti da un map cu cheie string si valoare o lista de int-uri, poate esti tentat sa nu te intrebi daca chiar asa e bine sa il stochezi
        - probabil tot la aceeasi declaratie si acelasi for la citire vei ajunge, dar daca il vei scrie tu nu exista nimic in acea sursa pe care nu il intelegi si din prima excluzi posibilitatea de a avea buguri/a nu sti sa faci ceva pentru ca responsabilul de schelet a gandit cumva si tu voiai sa faci in alt fel (perfect valid)
    - vedeti ca insist pe ideea de incercati sa faceti voi ca sa intelegeti mai bine! Deci ar putea fi si lucruri irelevante in unele probleme. 
-     - Ex. la minimax, probabil va fi o problema cu un joc complex, in care ai   
+     - Ex. la minimax, probabil va fi o problema cu un joc complex, in care vom scrie un cod foarte lung (e o exceptie). Acolo, daca scheletul va fi usor de inteles, evident ca este ok sa il folosim si sa implementam doar algoritmul.
+     - Pentru chestiile simple insa, citirea inputului & stocarea in forma potrivita chiar va ajuta sa intelegei   
           
 ## Makefile
 ### Standard Makefile
@@ -121,5 +122,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjMwNTM1Nl19
+eyJoaXN0b3J5IjpbNzgyMDc4ODU4XX0=
 -->
