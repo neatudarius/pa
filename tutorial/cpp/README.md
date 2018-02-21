@@ -28,7 +28,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
    - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
       - functioneaza fix ca map (interfata)
       - map tine cheile sortate
-        -   
+         - daca iterez    
 
     
 ## Makefile
@@ -96,5 +96,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDYzODUzOF19
+eyJoaXN0b3J5IjpbLTExOTE0NjEzMTRdfQ==
 -->
