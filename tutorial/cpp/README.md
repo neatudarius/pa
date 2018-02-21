@@ -38,7 +38,10 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
           - daca iterez un unordered_map cheile NU sunt sortate
           - pentru ca nu se chinuie sa tina cheile sortate,    operatiile de insert/delete/find au $O(1)$ (amortizat)   
 
-    
+## skel
+Recomandarea este sa nu folositi schelet.
+  - invatati sa scrieti voi singuri de la 0
+     -  cel putin la primele 6 laboratoare de PA, codu     
 ## Makefile
 ### Standard Makefile
 Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
@@ -112,5 +115,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTQwNjY0MV19
+eyJoaXN0b3J5IjpbNDU4MTQyNDFdfQ==
 -->
