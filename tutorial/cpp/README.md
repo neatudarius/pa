@@ -47,7 +47,11 @@ Recomandarea este sa nu folositi schelet.
        - probabil tot la aceeasi declaratie si acelasi for la citire vei ajunge, dar daca il vei scrie tu nu exista nimic in acea sursa pe care nu il intelegi si din prima excluzi posibilitatea de a avea buguri/a nu sti sa faci ceva pentru ca responsabilul de schelet a gandit cumva si tu voiai sa faci in alt fel (perfect valid)
    - vedeti ca insist pe ideea de incercati sa faceti voi ca sa intelegeti mai bine! Deci ar putea fi si lucruri irelevante in unele probleme. 
      - Ex. la minimax, probabil va fi o problema cu un joc complex, in care vom scrie un cod foarte lung (e o exceptie). Acolo, daca scheletul va fi usor de inteles, evident ca este ok sa il folosim si sa implementam doar algoritmul.
-     - Pentru chestiile simple insa, citirea inputului & stocarea in forma potrivita chiar va ajuta sa intelegei   
+     - Pentru chestiile simple insa, citirea inputului & stocarea in forma potrivita chiar va ajuta sa intelegeti
+    - puteti avea insa o sursa proprie, un skelet minimal pe care il puteti folosi oricand; este un exemplu mai jos
+
+### Standard skel
+### Fancy skel :D    
           
 ## Makefile
 ### Standard Makefile
@@ -122,5 +126,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyMDc4ODU4XX0=
+eyJoaXN0b3J5IjpbMTkyNzExMTg4NF19
 -->
