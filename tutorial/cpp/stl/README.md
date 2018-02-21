@@ -95,10 +95,10 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
   - std::min_element/std::max_element
 
 - modifying sequence
-- std::reverse
-#### std::remove
+  - std::reverse
+- std::remove
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTU3ODEwNl19
+eyJoaXN0b3J5IjpbMTYwMjEzNTI0M119
 -->
