@@ -34,11 +34,6 @@ TODO
 ``` cpp
 #include <utility>
 ```
-### std::vector
-cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
-``` cpp
-#include <vector>
-```
 
 ### std::stack
 cppreference: [std::stack](http://en.cppreference.com/w/cpp/container/stack)
@@ -51,23 +46,31 @@ cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
 ``` cpp
 #include <queue>
 ```
-
-### std::set
-cppreference: [std::set](http://en.cppreference.com/w/cpp/container/set)
-``` cpp
-#include <set>
-```
 ### std::map
 cppreference: [std::map](http://en.cppreference.com/w/cpp/container/map)
 ``` cpp
 #include <map>
 ```
 ### std::priority_queue
-
-### std::map (C++11)
-cppreference: [std::unordered_map](http://en.cppreference.com/w/cpp/container/map)
+cppreference: [std::priority_queue](http://en.cppreference.com/w/cpp/container/priority_queue)
 ``` cpp
-#include <map>
+#include <priority_queue>
+```
+### std::unordered_map (C++11)
+cppreference: [std::unordered_map](http://en.cppreference.com/w/cpp/container/unordered_map)
+``` cpp
+#include <unordered_map>
+```
+### std::set
+cppreference: [std::set](http://en.cppreference.com/w/cpp/container/set)
+``` cpp
+#include <set>
+```
+
+### std::vector
+cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+``` cpp
+#include <vector>
 ```
 ## standard algorithms
 ``` cpp
@@ -93,5 +96,5 @@ cppreference: [std::unordered_map](http://en.cppreference.com/w/cpp/container/ma
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzk4MDIxOTRdfQ==
+eyJoaXN0b3J5IjpbLTE5NTM1NzY2NzZdfQ==
 -->
