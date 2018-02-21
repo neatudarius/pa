@@ -30,17 +30,18 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
      - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
         - functioneaza fix ca map (interfata)
         - map tine cheile sortate
-         - in spate implementarea foloseste o structura arborescenta 
-         - daca iterez un map obtin cheile sortate
-         - pentru ca mentine aceasta proprietate, operatiile de insert/delete/find au $O(log n)$   
-      - unordered_map nu tine cheile sortate 
-         - chiar este un hashtable
-         - daca iterez un unordered_map cheile NU sunt sortate
-         - pentru ca nu se chinuie sa tina cheile sortate,    operatiile de insert/delete/find au $O(1)$ (amortizat)   
+           - in spate implementarea foloseste o structura arborescenta 
+           - daca iterez un map obtin cheile sortate
+           - pentru ca mentine aceasta proprietate, operatiile de insert/delete/find au $O(log n)$   
+        - unordered_map nu tine cheile sortate 
+          - chiar este un hashtable
+          - daca iterez un unordered_map cheile NU sunt sortate
+          - pentru ca nu se chinuie sa tina cheile sortate,    operatiile de insert/delete/find au $O(1)$ (amortizat)   
 
     
 ## Makefile
-
+### Standard Makefile
+Avand in vedere cele spuse mai sus, p
 # class vs struct la PA
  
 # STL
@@ -104,5 +105,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTc0NDkxXX0=
+eyJoaXN0b3J5IjpbLTE4ODI5MjQ0MjhdfQ==
 -->
