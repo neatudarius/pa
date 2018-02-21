@@ -33,7 +33,8 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
          - pentru ca mentine aceasta proprietate operatiile de insert/delete/find au $O(log n)$   
       - unordered_map nu tine cheile sortate 
          - chiar este un hashtable
-         - daca ite  
+         - daca iterez un unordered_map cheile NU sunt sortate
+         - pentru ca nu se chinuie sa tina cheile sortate,   
 
     
 ## Makefile
@@ -101,5 +102,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMDQ0MDgzOF19
+eyJoaXN0b3J5IjpbLTEzNzg0ODY4NjVdfQ==
 -->
