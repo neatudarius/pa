@@ -14,6 +14,8 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
  
  ### De ce C++11?
    - raspunsul scurt este: NU e necesar
+   - pentru compilare trebuie sa pui `-std=c++11` ca argument a lui g++
+   - mentionez cateva features care iti pot face viata mai usoara
    - putem insa sa ne facem codul mai scurt/clar prin folosirea lui auto :D
 ``` cpp
     map<int, int> :: iterator f() {...}
@@ -30,11 +32,11 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
       - map tine cheile sortate
          - in spate implementarea foloseste o structura arborescenta 
          - daca iterez un map obtin cheile sortate
-         - pentru ca mentine aceasta proprietate operatiile de insert/delete/find au $O(log n)$   
+         - pentru ca mentine aceasta proprietate, operatiile de insert/delete/find au $O(log n)$   
       - unordered_map nu tine cheile sortate 
          - chiar este un hashtable
          - daca iterez un unordered_map cheile NU sunt sortate
-         - pentru ca nu se chinuie sa tina cheile sortate,   
+         - pentru ca nu se chinuie sa tina cheile sortate,    operatiile de insert/delete/find au $O(1)$ (amortizat)   
 
     
 ## Makefile
@@ -102,5 +104,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzg0ODY4NjVdfQ==
+eyJoaXN0b3J5IjpbLTQxODcyNjUwN119
 -->
