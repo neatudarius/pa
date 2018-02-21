@@ -17,7 +17,8 @@ TODO
 ### std vs file
 TODO
 ### parsing
-T
+TODO
+
 ## containters
 ## iterators
 
@@ -66,5 +67,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTg0OTA1OF19
+eyJoaXN0b3J5IjpbNzM1MjUzNDU0XX0=
 -->
