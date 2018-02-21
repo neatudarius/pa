@@ -41,7 +41,15 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 ```
 
 ### std::stack
+cppreference: [std::stack](http://en.cppreference.com/w/cpp/container/stack)
+``` cpp
+#include <stack>
+```
+
 ### std::queue
+cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
+``` cpp
+#include <stack>
 ### std::set
 ### std::map
 ### std::priority_queue
@@ -70,5 +78,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODg3ODQ1XX0=
+eyJoaXN0b3J5IjpbLTE3OTcxNzU1NTFdfQ==
 -->
