@@ -2,7 +2,7 @@
 Responsabil: [Darius Neațu](neatudarius@gmail.com)
 
 # Intro
-## C++ 11
+## C? C++ 11
 La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
   - dorim sa avem cat mai 
     
@@ -71,5 +71,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDkyOTEyOTZdfQ==
+eyJoaXN0b3J5IjpbLTE1OTI2Mzg1NjRdfQ==
 -->
