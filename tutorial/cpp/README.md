@@ -1,9 +1,10 @@
 # C++ tutorial
-Responsabil: [Darius Neatu](neatudarius@gmail.com)
+Responsabil: [Darius Neațu](neatudarius@gmail.com)
 
 # Intro
 ## C++ 11
-
+La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
+  -\  
 ## Makefile
 
 # class vs struct la PA
@@ -66,7 +67,8 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 # Recomandari & exemple
 Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
 http://www.cplusplus.com/
+http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDczNDg1MThdfQ==
+eyJoaXN0b3J5IjpbLTE5MDM1ODMwMzVdfQ==
 -->
