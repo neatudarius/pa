@@ -41,7 +41,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
     
 ## Makefile
 ### Standard Makefile
-Avand in vedere cele spuse mai sus, puteti sa fac
+Avand in vedere cele spuse mai sus, puteti sa faceti mere
 # class vs struct la PA
  
 # STL
@@ -105,5 +105,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzI1OTgzODVdfQ==
+eyJoaXN0b3J5IjpbLTE3ODc2ODE4MjRdfQ==
 -->
