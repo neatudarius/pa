@@ -24,28 +24,23 @@ TODO
 ## iterators
 TODO
 
-## containers / data structures
+ ## utils
 ### std::pair
 ``` cpp
 #include <utility>
 ```
-
 ### std::tuple
 ``` cpp
 #include <utility>
 ```
 
+## containers
 ### std::stack
 cppreference: [std::stack](http://en.cppreference.com/w/cpp/container/stack)
 ``` cpp
 #include <stack>
 ```
 
-### std::queue
-cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
-``` cpp
-#include <queue>
-```
 ### std::map
 cppreference: [std::map](http://en.cppreference.com/w/cpp/container/map)
 ``` cpp
@@ -56,6 +51,13 @@ cppreference: [std::priority_queue](http://en.cppreference.com/w/cpp/container/p
 ``` cpp
 #include <priority_queue>
 ```
+
+### std::queue
+cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
+``` cpp
+#include <queue>
+```
+
 
 ### std::set
 cppreference: [std::set](http://en.cppreference.com/w/cpp/container/set)
@@ -98,5 +100,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NTUzMjAzMl19
+eyJoaXN0b3J5IjpbLTEwMjIzOTMyMDBdfQ==
 -->
