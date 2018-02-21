@@ -51,9 +51,47 @@ Recomandarea este sa nu folositi schelet.
     - puteti avea insa o sursa proprie, un skelet minimal pe care il puteti folosi oricand; este un exemplu mai jos
 
 ### Standard skel
+``` cpp
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <queue>
+#include <stack>
+#include <set>
+#include <unordered_map>
+#include <vector>
 
-### Fancy skel :D    
-          
+using namespace std;
+
+int main() {
+	freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
+    freopen("gigel.out", "w", stdout);  // daca las linia asta afisez in fisier
+    
+    // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
+    // de mai sus decomentate
+    
+	cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
+
+	return 0;
+}
+```
+### Fancy skel :D
+``` cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	freopen("gigel.in",  "r", stdin);   // daca las linia asta citesc din fisier
+    freopen("gigel.out", "w", stdout);  // daca las linia asta afisez in fisier
+    
+    // acum pot folosi cin si cout sa citesc/afisez din/in fisier daca am lasat liniile
+    // de mai sus decomentate
+    
+	cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
+
+	return 0;
+}
+```          
 ## Makefile
 ### Standard Makefile
 Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
@@ -61,8 +99,30 @@ Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiec
 Puteti salva urmatorul Makefile undeva in `~/utils/MakefileCpp`. Rulati comanda `cp ~/utils/MakefileCpp ./Makefile` sa il copiati unde doriti.
 
 ``` bash
-CC = 
-```
+# doar linia urmatoare e nevoie sa o modificati cu sursa pe care o compilati
+SRC = skel.cpp
+
+# configurari g++
+CC = g++
+CFLAGS = -Wall -Wextra -std=c++11
+LDFLAGS = -lm
+
+# fisiere obiect si executabile care vor fi  generate
+OBJ = $(SRC:.cpp=.o)   # OBJ = inlocuiteste extensia .cpp cu .o
+EXE = $(SRC:.cpp=.exe) # OBJ = inlocuiteste extensia .cpp cu .exe
+
+
+build: $(SRC) 
+	$(CC) $(CFLAGS) $^ -o $(EXE) $(LDFLAGS)
+
+
+run: build
+	./$(EXE)
+
+
+.PHONY: clean
+clean:
+	rm -f *.o *.exe ```
 
 # class vs struct la PA
  
@@ -127,5 +187,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjQ0ODkwMl19
+eyJoaXN0b3J5IjpbLTQ5Mzg3NTUwOF19
 -->
