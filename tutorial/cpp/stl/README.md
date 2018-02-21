@@ -49,11 +49,26 @@ cppreference: [std::stack](http://en.cppreference.com/w/cpp/container/stack)
 ### std::queue
 cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
 ``` cpp
-#include <stack>
+#include <queue>
+```
+
 ### std::set
+cppreference: [std::set](http://en.cppreference.com/w/cpp/container/set)
+``` cpp
+#include <set>
+```
 ### std::map
+cppreference: [std::map](http://en.cppreference.com/w/cpp/container/map)
+``` cpp
+#include <map>
+```
 ### std::priority_queue
 
+### std::map (C++11)
+cppreference: [std::unordered_map](http://en.cppreference.com/w/cpp/container/map)
+``` cpp
+#include <map>
+```
 ## standard algorithms
 ``` cpp
 #include <algorithm>
@@ -78,5 +93,5 @@ cppreference: [std::queue](http://en.cppreference.com/w/cpp/container/queue)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTcxNzU1NTFdfQ==
+eyJoaXN0b3J5IjpbLTE0Mzk4MDIxOTRdfQ==
 -->
