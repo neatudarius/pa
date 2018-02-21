@@ -14,7 +14,12 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
  
  ### De ce C++11?
    - raspunsul scurt este: NU e necesar
-   - putem insa sa ne facem codul mai scurt/clar
+   - putem insa sa ne facem codul mai scurt/clar prin folosirea lui auto :D
+     ``` cpp
+    map<int, int> :: iterator f() {...}
+    ...
+     ```
+
     
 ## Makefile
 
@@ -81,5 +86,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjcwNzA5XX0=
+eyJoaXN0b3J5IjpbLTEzNzgxMDc5NDddfQ==
 -->
