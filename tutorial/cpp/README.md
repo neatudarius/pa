@@ -22,7 +22,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
                    // poate am uitat ce tip returneaza f(adica stiu ce este - un iterator, dar nu mai stiu cum se scrie)
 
      map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
-     ```
+```
 
     
 ## Makefile
@@ -90,5 +90,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTcyODk1MjVdfQ==
+eyJoaXN0b3J5IjpbMTMwODM2NzY3XX0=
 -->
