@@ -41,7 +41,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
     
 ## Makefile
 ### Standard Makefile
-Avand in vedere cele spuse mai sus, puteti sa faceti mereu (cel putin la laborator) 
+Avand in vedere cele spuse mai sus, puteti sa faceti mereu (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti)
 # class vs struct la PA
  
 # STL
@@ -105,5 +105,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTE4NzI0N119
+eyJoaXN0b3J5IjpbLTYxMjEyNDIwNF19
 -->
