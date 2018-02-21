@@ -26,7 +26,8 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
      map<int, int> :: iterator it  = f(); //  daca nu folosesc auto trebuie sa fac asa
 ```
    - probabil ca la PA nu se va ajunge pana aici, dar pentru voi e bine sa stiti, de exemplu, ca in C++11 exista si unordered_map. 
-      - fu
+      - functioneaza fix ca map (interfata)
+      - map tine c
 
     
 ## Makefile
@@ -94,5 +95,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODc1Nzk5NF19
+eyJoaXN0b3J5IjpbLTQ0Mjg2OTI3OF19
 -->
