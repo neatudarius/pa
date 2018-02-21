@@ -96,9 +96,9 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 
 - modifying sequence
   - std::reverse
-- std::remove
+  - std::remove
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjEzNTI0M119
+eyJoaXN0b3J5IjpbLTQ1Nzk0MDM3XX0=
 -->
