@@ -2,9 +2,10 @@
 Responsabil: [Darius Neațu](neatudarius@gmail.com)
 
 # Intro
-## C? C++ 11
+## C++? C++11?
 La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
-  - dorim sa avem cat mai 
+  - dorim sa avem cat mai mult timp alocat pentru etapa de gandire/cautare algoritm
+  - 
     
 ## Makefile
 
@@ -71,5 +72,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI2Mzg1NjRdfQ==
+eyJoaXN0b3J5IjpbLTE0NTk2MTYwMjNdfQ==
 -->
