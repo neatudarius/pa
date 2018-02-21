@@ -71,8 +71,8 @@ int main() {
     // de mai sus decomentate
     
     cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
-
-	return 0;
+    
+    return 0;
 }
 ```
 ### Fancy skel :D
@@ -89,7 +89,7 @@ int main() {
     
     cout << "pwp de la Gigel\n"; // aici am scris un mesaj in gigel.out
 
-	return 0;
+    return 0;
 }
 ```          
 ## Makefile
@@ -134,5 +134,5 @@ Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
   - http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY1OTMyMDQwXX0=
+eyJoaXN0b3J5IjpbLTM1MTA0OTgzMl19
 -->
