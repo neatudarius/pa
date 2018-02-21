@@ -41,7 +41,9 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
     
 ## Makefile
 ### Standard Makefile
-Avand in vedere cele spuse mai sus, puteti sa faceti mereu (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti)
+Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
+
+Puteti salva urmatorul Makefile undeva in `~/utils/MakefileCpp`. Rulati comanda `cp ~/utils/MakefileCpp Makefile
 # class vs struct la PA
  
 # STL
@@ -105,5 +107,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjEyNDIwNF19
+eyJoaXN0b3J5IjpbMTIwMTIzMTU0OF19
 -->
