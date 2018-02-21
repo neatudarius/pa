@@ -12,7 +12,8 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
   - nu trebuie sa stim C++, ci doar cateva concepte de baza
   - nu trebuie sa stim tot STL, ci doar o (mica) parte din el
  
- ### De ce C++1
+ ### De ce C++11?
+ 
     
 ## Makefile
 
@@ -79,5 +80,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjAzNDgxMTRdfQ==
+eyJoaXN0b3J5IjpbMTQ2MDQ4ODUxMl19
 -->
