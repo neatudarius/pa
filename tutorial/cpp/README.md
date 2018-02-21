@@ -41,7 +41,7 @@ La PA dorim sa avem o implementare cat mai scurta din mai multe motive:
 ## skel
 Recomandarea este sa nu folositi schelet.
   - invatati sa scrieti voi singuri de la 0
-     -  cel putin la primele 6 laboratoare de PA, codu     
+     -  cel putin la primele 6 laboratoare de PA, codul e foarte foarte scurt pentru o problema. Deci este     
 ## Makefile
 ### Standard Makefile
 Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiecare problema (cel putin la laborator, unde recomand sa nu folositi schelet, ca sa invatati voi sa faceti).
@@ -115,5 +115,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4MTQyNDFdfQ==
+eyJoaXN0b3J5IjpbLTExNzIyNDU1NjBdfQ==
 -->
