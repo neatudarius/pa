@@ -7,8 +7,11 @@
 ### streams vs libc
 ### examples
 ### std vs file
-### parsare
-## Containters
+### parsing
+
+## containters
+## iterators
+
 ### std::pair
 ``` cpp
 #include <utility>
@@ -55,5 +58,5 @@ cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
 #### std::fill
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxMDMwNjgzXX0=
+eyJoaXN0b3J5IjpbLTE5Mjg1MTkzNTZdfQ==
 -->
