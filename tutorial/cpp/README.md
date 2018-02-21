@@ -43,7 +43,8 @@ Recomandarea este sa nu folositi schelet.
   - invatati sa scrieti voi singuri de la 0
      -  cel putin la primele 6 laboratoare de PA, codul e foarte foarte scurt pentru o problema. Deci poate chiar este mai complicat sa te uiti in schelet si sa il intelegi decat sa scrii tu alea 10 linii :D.
      - ca sa sprijin asta dau un exemplu: citire & stocarea inputului in forma potrivita face parte din intelegerea problemei!
-       - daca in schelet iti da un map cu cheie string si valoare o lista de int-uri, poate esti tentat sa nu te intrebi daca chiar asa e bine sa il stochezi si 
+       - daca in schelet iti da un map cu cheie string si valoare o lista de int-uri, poate esti tentat sa nu te intrebi daca chiar asa e bine sa il stochezi
+       -  
           
 ## Makefile
 ### Standard Makefile
@@ -118,5 +119,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNTI3NDMyM119
+eyJoaXN0b3J5IjpbLTE4ODM2NTAyMDZdfQ==
 -->
