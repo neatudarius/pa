@@ -46,8 +46,9 @@ Avand in vedere cele spuse mai sus, puteti sa faceti mereu un folder pentru fiec
 Puteti salva urmatorul Makefile undeva in `~/utils/MakefileCpp`. Rulati comanda `cp ~/utils/MakefileCpp ./Makefile` sa il copiati unde doriti.
 
 ``` bash
-
+CC = 
 ```
+
 # class vs struct la PA
  
 # STL
@@ -111,5 +112,5 @@ http://www.cplusplus.com/
 http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTk0MTg1MF19
+eyJoaXN0b3J5IjpbLTk1MTQwNjY0MV19
 -->
