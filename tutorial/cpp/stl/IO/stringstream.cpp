@@ -28,6 +28,7 @@ int main() {
 
     // buffer.str() contine tot textul concatenat care poate fi stocat unde imi trebuie
     cout << buffer.str(); // am stocat deja \n in buffer
+    cout << buffer.str() << "\n";
 
 	return 0;
 }

@@ -28,9 +28,12 @@ int main() {
 	cout << "\n";
 
 	// cautare
+	// set<int> :: iterator it = s.find(x);
+	// new A.B
 	auto it = s.find(x);
 	if (it != s.end()) {
 		cout << x << " este in set\n";
+		cout << *it << " este in set\n";
 	} else {
 		cout << x << " NU este in set\n";
 	}

@@ -9,7 +9,6 @@ int main() {
 	string line;
 	while (getline(cin, line)) {
 		cout << "(" << line << ")" << "\n";
-
 		// pot folosi sstream sa scot chestii din line
 	}
 
