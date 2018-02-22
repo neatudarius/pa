@@ -1,5 +1,4 @@
 # C++ tutorial
-Responsabil: [Darius Neațu](neatudarius@gmail.com)
 
 # Intro
 ## C++
@@ -134,5 +133,5 @@ Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
   - http://en.cppreference.com/w/
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTA0OTgzMl19
+eyJoaXN0b3J5IjpbLTM0NDk3NDk4OV19
 -->
