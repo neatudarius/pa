@@ -47,9 +47,46 @@ Recomandarea este sa nu folositi schelet.
    - vedeti ca insist pe ideea de incercati sa faceti voi ca sa intelegeti mai bine! Deci ar putea fi si lucruri irelevante in unele probleme. 
      - Ex. la minimax, probabil va fi o problema cu un joc complex, in care vom scrie un cod foarte lung (e o exceptie). Acolo, daca scheletul va fi usor de inteles, evident ca este ok sa il folosim si sa implementam doar algoritmul.
      - Pentru chestiile simple insa, citirea inputului & stocarea in forma potrivita chiar va ajuta sa intelegeti
-    - puteti avea insa o sursa proprie, un skelet minimal pe care il puteti folosi oricand; este un exemplu mai jos
+    - puteti avea insa o sursa proprie, un skelet minimal pe care il puteti folosi oricand; este un exemplu mai josResponsabil: [Darius Neatu](neatudarius@gmail.com)
 
-### Standard skel
+# Intro
+## C++ 11
+
+## Makefile
+
+# class vs struct la PA
+ 
+# STL
+
+## IO
+### iostream
+
+### fstream
+
+## Containters
+### std::pair
+``` cpp
+#include <utility>
+```
+
+### std::tuple
+``` cpp
+#include <utility>
+```
+### std::vector
+cppreference: [std::vector](http://en.cppreference.com/w/cpp/container/vector)
+``` cpp
+#include <vector>
+```
+
+
+### std::stack
+### std::queue
+### std::set
+### std::map
+### std::priority_queue ???
+
+### Standard skelalgorithms
 ``` cpp
 #include <iostream>
 #include <fstream>
@@ -131,7 +168,29 @@ TODO
 Pe pagina fiecarei functii / structuri de date sunt niste exemple minimale.
   - http://www.cplusplus.com/
   - http://en.cppreference.com/w/
+algorithm>
+```
 
+### basic (non-sequence)
+#### std::min / std::max
+
+### sorting
+#### std::sort
+#### std::nth_elementh
+
+### searching
+#### std::find
+#### std::lower_bound
+#### std::upper_bound
+#### std::min_element/std::max_element
+
+### modifying sequence
+#### std::reverse
+#### std::remove
+#### std::fill
+
+# Recomandari
+# Exemple
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDk3NDk4OV19
+eyJoaXN0b3J5IjpbMTYxMDA5NDU4LC0zNDQ5NzQ5ODldfQ==
 -->
