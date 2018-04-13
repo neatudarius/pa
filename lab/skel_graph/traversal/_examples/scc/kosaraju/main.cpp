@@ -1,61 +1,93 @@
-//Componente tare conexe - Kosaraju - O(N+M)
+// Copyright Popescu Alexandru Gabriel <alexandru.popescu0697@gmail.com> 2018
+// Copyright Darius Neatu <neatudarius@gmail.com> 2018
+// Componente tare conexe - Kosaraju - O(n + m)
 // https://infoarena.ro/problema/ctc
+#include <bits/stdc++.h>
 
-#include <fstream>
-#include <bitset>
-#include <vector>
-#define Nmax 100099
+#define NMAX 100001
 #define pb push_back
-using namespace std;
-ifstream f("ctc.in");
-ofstream g("ctc.out");
- 
-int N,M,sol,Tsort[Nmax],x,y;
-bitset < Nmax> viz;
-vector < int > G[Nmax],T[Nmax],CTC[Nmax];
- 
- 
-void PrintOutput()
-{
- 
-}
- 
-void DFS(int node)
-{
-     viz[node]=1;
-     for(vector<int>::iterator it=G[node].begin();it!=G[node].end();++it)
-          if(!viz[*it])DFS(*it);
-     Tsort[++Tsort[0]]=node;
-}
- 
-void DFS_T(int node)
-{
-     viz[node]=0; CTC[sol].pb(node);
-     for(vector<int>::iterator it=T[node].begin();it!=T[node].end();++it)
-          if(viz[*it])DFS_T(*it);
-}
- 
-void Tarjan()
-{
-     for(int i=1; i<=N; ++i)
-          if(!viz[i])DFS(i);
-     for(int i=N; i>=1; --i)
-          if(viz[Tsort[i]])
-                ++sol , DFS_T(Tsort[i]);
-}
-int main()
-{
-     f>>N>>M;
-     for(int i=1;i<=M;++i)
-          f>>x>>y , G[x].pb(y) , T[y].pb(x);
-     Tarjan();
-     g<<sol<<'\n';
-     for(int i=1;i<=sol;++i)
-     {
-         for(vector<int>::iterator it=CTC[i].begin();it!=CTC[i].end();++it)
-               g<<*it<<' ';
-         g<<'\n';
-     }
-     f.close();g.close();
-     return 0;
+std::ifstream f("ctc.in");
+
+class Task {
+public:
+    void solve() {
+        read_input();
+        kosaraju();
+        print_output();
+    }
+
+private:
+    int n, m, sol = 0;
+    std::vector<int> G[NMAX];  // graful initial
+    std::vector<int> T[NMAX];  // graful transpus
+    std::vector<int> CTC[NMAX];  // retin solutia
+    std::vector<bool> visited;
+    std::vector<int> Tsort;  // retin nodurile crescator dupa timpul de finalizare
+                             // nu mai folosesc stiva si o sa parcurg vectorul invers
+                             // asemanator ca la sortarea topologica cu dfs
+
+    void read_input() {
+        f >> n >> m;
+        visited = std::vector<bool>(n + 1, false);
+        Tsort = std::vector<int> (n + 1, 0);
+        int x, y;
+        for (int i = 1; i <= m; ++i) {
+            f >> x >> y;
+            G[x].pb(y);
+            T[y].pb(x);
+        }
+    }
+
+    void kosaraju() {
+        for (int i = 1; i <= n; ++i) {
+            if (!visited[i]) {
+                dfs(i);
+            }
+        }
+        for (int i = n; i >= 1; --i) {
+            if (visited[Tsort[i]]) {
+                dfs_t(Tsort[i], sol);
+                ++sol;
+            }
+        }
+    }
+
+    void dfs(int node) {
+        visited[node] = true;
+        for (auto &vecin : G[node]) {
+            if (!visited[vecin]) {
+                dfs(vecin);
+            }
+        }
+        Tsort[++Tsort[0]] = node;  //Tsort[0] functioneaza pe post de counter
+    }
+
+    void dfs_t(int node, int &sol) {
+        visited[node] = false;
+        CTC[sol].pb(node);
+        for (auto &vecin : T[node]) {
+            if (visited[vecin]) {
+                dfs_t(vecin, sol);
+            }
+        }
+    }
+
+    void print_output() {
+        // pentru verificare pe infoarena trebuie doar modificata afisarea
+        std::cout << "Graful are " << sol << " componente tare conexe\n";
+        for (int i = 0; i < sol; ++i) {
+            std::cout << "Componenta tare conexa [" << i + 1 << "]: ";
+            for (auto &node : CTC[i]) {
+                std::cout << node << " ";
+            }
+            std::cout << '\n';
+        }
+    }
+};
+
+int main() {
+    Task *task = new Task();
+    task->solve();
+    delete task;
+    return 0;
 }
