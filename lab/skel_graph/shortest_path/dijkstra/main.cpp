@@ -1,3 +1,6 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
+
 /*
     skel_graph - Dijkstra - O(m log n)
     (Sau cu notatia din lab O(E log V))

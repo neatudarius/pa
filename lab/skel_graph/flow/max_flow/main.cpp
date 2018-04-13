@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 /*
     skel_graph - MaxFlow (Ford-Fulkerson) - O(N*M^2)
     http://www.infoarena.ro/problema/maxflow

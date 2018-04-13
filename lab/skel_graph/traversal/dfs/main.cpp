@@ -1,9 +1,8 @@
-// Darius Neatu <neatudarius@gmail.com>
-// 2018
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
-// skel_graph - DFS - O(n + m)
+// Parcurgere in adancime
+// DFS - O(n + m)
 
-// DFS - parcurgere in adancime
 // Exemplificare: determinare componente conexe
 // https://infoarena.ro/problema/dfs
 

@@ -1,5 +1,4 @@
-// Darius Neatu <neatudarius@gmail.com>
-// 2018
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
 // skel_graph - shortest path (one soruce) - O(n * m)
 

@@ -1,9 +1,8 @@
-// Darius Neatu <neatudarius@gmail.com>
-// 2018
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
-// skel_graph - BFS - O(n + m)
+// Parcurgere in latime
+// BFS - O(n + m)
 
-// BFS - parcugere in latime
 // Exemplificare: drumul minim ca si numar de arce de la o sursa source
 //                la toate celelalte noduri din graf
 // https://infoarena.ro/problema/bfs

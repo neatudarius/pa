@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 /*
     skel_graph - BellmanFord - O(mn)
     (Sau cu notatia din lab O(EV))

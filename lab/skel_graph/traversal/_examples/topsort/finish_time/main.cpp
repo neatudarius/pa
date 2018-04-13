@@ -1,9 +1,9 @@
-// Darius Neatu <neatudarius@gmail.com>
-// 2018
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
-// skel_graph - Topological Sort (DFS) - O(n + m)
+// Sortare tolopogica - Topological Sort
+// Sortare dupa timpii de finalizare
+// DFS - O(n + m)
 
-// Sortare topologica cu DFS - sortare dupa timpii de finalizare
 // https://infoarena.ro/problema/sortaret
 
 #include <bits/stdc++.h>

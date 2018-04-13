@@ -1,8 +1,11 @@
 // Copyright 2018 Popescu Alexandru Gabriel <alexandru.popescu0697@gmail.com>
 // Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 // Componente Tare Conexe (CTC) - Strongly Connected Components (SCC)
 // Kosaraju - O(n + m)
+
 // https://infoarena.ro/problema/ctc
+
 #include <bits/stdc++.h>
 
 #define NMAX 100010

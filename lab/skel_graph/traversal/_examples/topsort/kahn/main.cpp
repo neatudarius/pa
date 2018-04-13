@@ -1,9 +1,9 @@
-// Darius Neatu <neatudarius@gmail.com>
-// 2018
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
-// skel_graph - Topological Sort (Kahn) - O(n + m)
+// Sortare tolopogica - Topological Sort
+// Hahn - BFS
+// BFS - O(n + m)
 
-// Sortare Topologica cu BFS
 // https://infoarena.ro/problema/sortaret
 
 #include <bits/stdc++.h>

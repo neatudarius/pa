@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 /*
     skel_graph - RoyFloyd - O(n^3)
     (Sau cu notatia din lab O(V^3))

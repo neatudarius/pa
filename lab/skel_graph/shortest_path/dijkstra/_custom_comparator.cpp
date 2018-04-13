@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 /*
     dijkstra_priority_without_custom_comparator
     O sa intelegeti la tema 2 de ce am pus asta aici :D
