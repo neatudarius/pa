@@ -15,7 +15,7 @@ class Task {
 public:
   void solve() {
     read_input();
-    kosaraju();
+    get_result();
     print_output();
   }
 
@@ -46,6 +46,10 @@ private:
       adj[x].push_back(y);
       adj_trans[y].push_back(x);
     }
+  }
+
+  void get_result() {
+    kosaraju();
   }
 
   void kosaraju() {
