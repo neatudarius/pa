@@ -15,4 +15,4 @@ run: build
 
 .PHONY: clean
 clean:
-	rm -f *.o *.exe 
+	rm -f *.o *.exe *.out

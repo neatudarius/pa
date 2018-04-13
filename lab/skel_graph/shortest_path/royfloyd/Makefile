@@ -1,10 +1,18 @@
-# recomand CodeBlocks :))
-build:
-	g++ -Wall -std=c++11 main.cpp -o main
+SRC =  main.cpp
 
+CC = g++
+CFLAGS = -Wall -Wextra -std=c++11
+LDFLAGS = -lm
+
+OBJ = $(SRC:.cpp=.o)
+EXE = $(SRC:.cpp=.exe)
+
+build:
+	$(CC) $(CFLAGS) $(LDFLAGS) $(SRC) -o $(EXE) 
 
 run: build
-	./main
+	time ./$(EXE) && echo "pwp" &> /dev/null
 
+.PHONY: clean
 clean:
-	rm -rf *.o *~ main
+	rm -f *.o *.exe *.out
