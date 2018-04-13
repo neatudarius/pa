@@ -1,11 +1,8 @@
 // Copyright 2018 Popescu Alexandru Gabriel <alexandru.popescu0697@gmail.com>
-
 // Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
 // Componente Tare Conexe (CTC) - Strongly Connected Components (SCC)
-
 // Kosaraju - O(n + m)
-
 // https://infoarena.ro/problema/ctc
 
 #include <bits/stdc++.h>
@@ -23,15 +20,16 @@ public:
 
 private:
   int n, m, sol = 0; // n = numar de noduri, m = numar de muchii, sol = numarul
-                     // de comp. tare conexe
-  vector<int> adj[NMAX];   // adj[node] lista de adiacenta a nodului node pentru
-                           // graful initial
-  vector<int> adj_t[NMAX]; // adj_t[node] lista de adiacenta a nodului node
-                           // pentru graful transpus
-  vector<vector<int>> CTC; // retin solutia
+  // de comp. tare conexe
+  vector<int> adj[NMAX]; // adj[node] lista de adiacenta a nodului node pentru
+  // graful initial
+  vector<int>
+      adj_trans[NMAX]; // adj_trans[node] lista de adiacenta a nodului node
+  // pentru graful transpus
+  vector<vector<int>> ctc; // ctc[i] = componentare tare conexa cu indicele i
   vector<int> visited;
-  vector<int> Tsort; // retin nodurile crescator dupa timpul de finalizare, nu
-                     // folosim stiva
+  vector<int> topsort; // retin nodurile crescator dupa timpul de finalizare, nu
+  // folosim stiva
 
   void read_input() {
     cin >> n >> m;
@@ -40,22 +38,22 @@ private:
     for (int i = 1; i <= m; ++i) {
       cin >> x >> y;
       adj[x].push_back(y);
-      adj_t[y].push_back(x);
+      adj_trans[y].push_back(x);
     }
   }
 
   void kosaraju() {
-    Tsort.push_back(-1); // indexare de la 1
+    topsort.push_back(-1); // indexare de la 1
     for (int i = 1; i <= n; ++i) {
       if (!visited[i]) {
         dfs(i);
       }
     }
     for (int i = n; i >= 1; --i) {
-      if (visited[Tsort[i]]) {
+      if (visited[topsort[i]]) {
         vector<int> current_ctc;
-        dfs_t(Tsort[i], current_ctc);
-        CTC.push_back(current_ctc);
+        dfs_t(topsort[i], current_ctc);
+        ctc.push_back(current_ctc);
         ++sol;
       }
     }
@@ -68,13 +66,13 @@ private:
         dfs(vecin);
       }
     }
-    Tsort.push_back(node); // Tsort[0] functioneaza pe post de counter
+    topsort.push_back(node); // Tsort[0] functioneaza pe post de counter
   }
 
   void dfs_t(int node, vector<int> &current_ctc) {
     visited[node] = 0;
     current_ctc.push_back(node);
-    for (auto &vecin : adj_t[node]) {
+    for (auto &vecin : adj_trans[node]) {
       if (visited[vecin]) {
         dfs_t(vecin, current_ctc);
       }
@@ -86,7 +84,7 @@ private:
     cout << "Graful are " << sol << " componente tare conexe\n";
     for (int i = 0; i < sol; ++i) {
       cout << "Componenta tare conexa [" << i + 1 << "]: ";
-      for (auto &node : CTC[i]) {
+      for (auto &node : ctc[i]) {
         cout << node << " ";
       }
       cout << '\n';
