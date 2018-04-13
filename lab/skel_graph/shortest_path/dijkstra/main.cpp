@@ -156,19 +156,35 @@ void print_output() {
 
 // puteti pastra main-ul mereu cum e acum
 int main() {
-    // las linia urmatoare daca citesc din fisier
-    assert( freopen("dijkstra.in", "r", stdin) != NULL);
+    // din cauza ca fac redirectari, salvez starea lui cin si cout
+    auto cin_buff = cin.rdbuf();
+    auto cout_buff = cout.rdbuf();
 
-    // las linia urmatoare daca afisez in fisier
-    assert( freopen("dijkstra.out", "w", stdout) != NULL) ;
+    // las liniile urmatoare daca citesc din fisier
+    ifstream fin("dijkstra.in");
+    cin.rdbuf(fin.rdbuf()); //save and redirect
 
+    // las liniile urmatoare daca afisez in fisier
+    // ofstream fout("dijkstra.out");
+    // cout.rdbuf(fout.rdbuf()); //save and redirect
+
+    // aici este rezolvarea propriu-zisa    
     read_input();
     solve();
     print_output();
+
+    // restore pentru cin si cout
+    cin.rdbuf(cin_buff);
+    cout.rdbuf(cout_buff);
+
+    // obs. nu e nevoie sa inchid fisierele
+    // cand se apeleaz destructorii pentru fin si fout se vor inchide
 
     return 0;
 }
 
 
-// Obs: pe infoarena ia 80p din cauza citirii
-// http://www.infoarena.ro/job_detail/1970166
+
+
+
+
