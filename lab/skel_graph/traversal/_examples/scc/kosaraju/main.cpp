@@ -3,6 +3,7 @@
 
 // Componente Tare Conexe (CTC) - Strongly Connected Components (SCC)
 // Kosaraju - O(n + m)
+
 // https://infoarena.ro/problema/ctc
 
 #include <bits/stdc++.h>
@@ -19,17 +20,22 @@ public:
   }
 
 private:
-  int n, m, sol = 0; // n = numar de noduri, m = numar de muchii, sol = numarul
-  // de comp. tare conexe
-  vector<int> adj[NMAX]; // adj[node] lista de adiacenta a nodului node pentru
-  // graful initial
-  vector<int>
-      adj_trans[NMAX]; // adj_trans[node] lista de adiacenta a nodului node
-  // pentru graful transpus
-  vector<vector<int>> ctc; // ctc[i] = componentare tare conexa cu indicele i
+  // n = numar de noduri, m = numar de muchii
+  int n, m;
+
+  // adj[node] lista de adiacenta a nodului node pentru graful initial
+  vector<int> adj[NMAX];
+
+  // adj_trans[node] lista de adiacenta a nodului node pentru graful transpus
+  vector<int> adj_trans[NMAX];
+
+  // ctc[i] = componenta tare conexa cu indicele i
+  vector<vector<int>> ctc;
+
   vector<int> visited;
-  vector<int> topsort; // retin nodurile crescator dupa timpul de finalizare, nu
-  // folosim stiva
+
+  // retin nodurile crescator dupa timpul de finalizare, nu folosim stiva
+  vector<int> topsort;
 
   void read_input() {
     cin >> n >> m;
@@ -54,7 +60,6 @@ private:
         vector<int> current_ctc;
         dfs_t(topsort[i], current_ctc);
         ctc.push_back(current_ctc);
-        ++sol;
       }
     }
   }
@@ -66,7 +71,7 @@ private:
         dfs(vecin);
       }
     }
-    topsort.push_back(node); // Tsort[0] functioneaza pe post de counter
+    topsort.push_back(node);
   }
 
   void dfs_t(int node, vector<int> &current_ctc) {
@@ -81,6 +86,7 @@ private:
 
   void print_output() {
     // pentru verificare pe infoarena trebuie doar modificata afisarea
+    int sol = ctc.size();
     cout << "Graful are " << sol << " componente tare conexe\n";
     for (int i = 0; i < sol; ++i) {
       cout << "Componenta tare conexa [" << i + 1 << "]: ";
