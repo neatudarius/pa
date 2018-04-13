@@ -6,6 +6,7 @@
 
 // links:
 // - https://infoarena.ro/problema/ctc
+// - https://www.youtube.com/watch?v=RpgcYiky7uw
 
 #include <bits/stdc++.h>
 
