@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 // Componente biconexe + puncte de articulatie + muchii critice (punti)
 // O(n + m)
 // https://infoarena.ro/problema/biconex

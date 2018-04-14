@@ -1,3 +1,5 @@
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+
 //Componente tare conexe - Tarjan - O(N+M)
 // https://infoarena.ro/problema/ctc
 
