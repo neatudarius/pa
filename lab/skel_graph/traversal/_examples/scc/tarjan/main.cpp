@@ -67,23 +67,23 @@ private:
     for (int i = 1; i <= n; ++i) {
       // am gasit un nod la care nu s-a ajuns pana acum
       if (idx[i] == -1) {
-        tarjan(i, &index);
+        tarjan(i, index);
       }
     }
   }
 
-  void tarjan(int node, int *index) {
+  void tarjan(int node, int& index) {
     // atat idx, cat si low_link vor primi valoarea lui index
     // index = nivelul la care am ajuns cu parcurgerea
-    idx[node] = *index;
-    low_link[node] = *index;
+    idx[node] = index;
+    low_link[node] = index;
 
     // adaug in stiva nodul, si il marchez ca fiind in stiva
     in_stack[node] = 1;
     st.push(node);
 
     // cresc nivelul, deoarece vecinii lui node vor fi pe nivelul index + 1
-    *index = *index + 1;
+    index = index + 1;
 
     for (int neighbour : adj[node]) {
       // am gasit un vecin nevizitat
