@@ -121,6 +121,7 @@ private:
   void print_output() {
     // pentru verificare pe infoarena trebuie doar modificata afisarea
     cout << "Graful are " << ctc.size() << " componente tare conexe\n";
+    //cout << ctc.size() << "\n";
     int index = 1;
 
     for (vector<int> comp : ctc) {
