@@ -140,8 +140,8 @@ int main() {
   auto cout_buff = cout.rdbuf();
 
   // las liniile urmatoare daca citesc din fisier
-  //ifstream fin("ctc.in");
-  //cin.rdbuf(fin.rdbuf()); // save and redirect
+  ifstream fin("ctc.in");
+  cin.rdbuf(fin.rdbuf()); // save and redirect
 
   // las liniile urmatoare daca afisez in fisier
   //ofstream fout("ctc.out");
