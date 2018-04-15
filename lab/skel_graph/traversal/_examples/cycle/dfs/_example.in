@@ -8,8 +8,12 @@
 4 7
 4 8
 
-// acesta are continutul lui _example.in
-// se poate vizualiza graful in _example.png
+n = 9
+m = 8
+(celelate sunt muchii)
+
+vezi _example.png
+
 
 // pentru a verifica daca se detecteaza ciclul, de va adauga
 // muchi 6->1
