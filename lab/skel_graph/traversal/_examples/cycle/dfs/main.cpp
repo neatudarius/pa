@@ -1,4 +1,4 @@
-// Copyright 2018 Dariu// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
+// Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
 // Ciclu in graf orientat
 // DFS - O(n + m)
