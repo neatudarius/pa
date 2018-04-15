@@ -8,9 +8,9 @@
 n = 5
 m = 3
 
-			1   4      (se observa ca are 2 componente conexe)
-		   /     \
-		  2       5 
-		   \
-		    3
-		   	
+            1   4      (se observa ca are 2 componente conexe)
+           /     \
+          2       5 
+           \
+            3
+            
