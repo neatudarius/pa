@@ -3,14 +3,6 @@
 2 3
 4 5
 
-// codul are grija sa citeasca doar ce e mai sus
-// graful arata asa
-n = 5
-m = 3
 
-            1   4      (se observa ca are 2 componente conexe)
-           /     \
-          2       5 
-           \
-            3
-            
+// acesta are continutul lui _example.in
+// se poate vizualiza graful in _example.png
