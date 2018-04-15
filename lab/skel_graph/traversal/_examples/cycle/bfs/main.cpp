@@ -3,7 +3,8 @@
 // Ciclu in graf orientat
 // Kahn - O(n + m)
 
-// 		Idee: se incearca sa se gaseasca o sortare topologica cu algoritmul
+// 		Idee: se incearca sa se gaseasca o sortare topologica cu
+// algoritmul
 // lui Kahn. Daca la finalul algoritmului exista cel putin un nod cu grad
 // intern mai mare ca zero, atunci graful are ciclu (nu s-a putut sorta
 // topologic).
@@ -15,7 +16,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define NMAX 100009    // numar maxim de noduri
+#define NMAX 100009 // numar maxim de noduri
 
 class Task {
 public:
@@ -74,9 +75,9 @@ private:
     }
 
     if (is_valid) {
-    	is_acyclic = true;  // graf ACICLIC (valid topsort)
-  	} else {
-  		is_acyclic = false; // graf CICLIC  (invalid topsort)
+      is_acyclic = true; // graf ACICLIC (valid topsort)
+    } else {
+      is_acyclic = false; // graf CICLIC  (invalid topsort)
     }
   }
 
