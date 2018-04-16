@@ -6,6 +6,7 @@ un exemplu de rezultat. Totul se desfasoara prin comanda `make run`
  - Sursa se numeste `main.cpp`, fisierele de intrare/iesire sunt de forma `algorithm.in`/`algorithm.out`.
  - Fiecare algoritm clasic pe grafuri trebuie sa fie insotit de fisierele `_example.in` / `_example.png`. In fisierul in se pune un exemlu relevant care dorim sa nu se schimbe. In fisierul png vom avea desenat graful corespunzator exemplui. Pentru desenare se foloseste [graph_editor](https://csacademy.com/app/graph_editor/).
  - Se va testa pe infoarena/leetcode/hackerrank (unde se poate - speram ca se poate mereu :D).
+ - Se vor folosi toolurile mentionate in `tools.md`.
 
 ### git
 #### setup
@@ -64,16 +65,3 @@ un exemplu de rezultat. Totul se desfasoara prin comanda `make run`
    git checkout master
    git pull
    ```
-
-### Sublime 3
-Recomandam sa folositi `Sublime 3` pentru a putea accesa toate resursele din repo prin acelasi tool.
-
- - instalare `Sublime 3`
-   ```
-   sudo add-apt-repository ppa:webupd8team/sublime-text-3
-   sudo apt-get update
-   sudo apt-get install sublime-text-installer
-   ```
- - rulare
-  ` subl .`
- - se poate da click pe orice fisier pentru deschidere, inclusiv poze!
