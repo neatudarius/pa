@@ -5,16 +5,5 @@
 4 5
 
 
-// codul are grija sa citeasca doar ce e mai sus
-// graful arata asa
-n = 6
-m = 5
-s = 1 
-
-			1      6 (nod izolat)
-		   / \
-		  2   3
-		  |
-		  4
-		  |
-		  5 	
+// acesta are continutul lui _example.in
+// se poate vizualiza graful in _example.png
