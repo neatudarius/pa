@@ -12,6 +12,8 @@ Recomandam sa folositi `Sublime 3` pentru a putea accesa toate resursele din rep
  - se poate da click pe orice fisier pentru deschidere, inclusiv poze!
 
 ### g++-7
+Recomandam sa instalati g++-7 pentru a va asigura exemplele de cod modificate sunt compatibile cu vmchecker.
+
 ```
 darius@pc ~ $ sudo add-apt-repository ppa:jonathonf/gcc-7.2
 darius@pc ~ $ sudo apt-get update
