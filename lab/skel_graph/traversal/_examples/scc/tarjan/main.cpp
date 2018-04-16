@@ -30,11 +30,13 @@ private:
   // ctc[i] = componenta tare conexa cu indicele i
   vector<vector<int>> ctc;
 
-  // nivelul / ordinea de vizitare
-  // idx[i] = -1 daca inca nu am ajuns la nodul i
-  vector<int> idx;
+  // ordinea de vizitare
+  // found[node] = timpul de start a lui node in parcurgerea DFS
+  // in laborator found se numeste idx
+  vector<int> found;
 
-  // min { idx[u] | u este accesibil din v }
+  // low_link[node] = min { found[x] | x este accesibil din node }
+  // adica timpul minim al unui nou
   vector<int> low_link;
 
   // in_stack[i] = 1 daca i este pe stiva
@@ -50,7 +52,7 @@ private:
     cin >> n >> m;
 
     in_stack = vector<int>(n + 1, 0);
-    idx = vector<int>(n + 1, -1);
+    found = vector<int>(n + 1, -1);
     low_link = vector<int>(n + 1, 0);
     int x, y;
 
@@ -62,43 +64,55 @@ private:
   }
 
   void get_result() {
-    // pornesc de pe nivelul 0 de vizitare
-    int index = 0;
+    // momentul curent de start
+    int current_start = 0;
     for (int i = 1; i <= n; ++i) {
       // am gasit un nod la care nu s-a ajuns pana acum
-      if (idx[i] == -1) {
-        tarjan(i, index);
+      if (found[i] == -1) {
+        tarjan(i, current_start);
       }
     }
   }
 
-  void tarjan(int node, int& index) {
-    // atat idx, cat si low_link vor primi valoarea lui index
-    // index = nivelul la care am ajuns cu parcurgerea
-    idx[node] = index;
-    low_link[node] = index;
+  void tarjan(int node, int &current_start) {
+    // atat idx, cat si low_link vor primi valoarea lui current_start
+    // current_start = momentul curent de start
+    found[node] = current_start;
+    low_link[node] = current_start;
 
     // adaug in stiva nodul, si il marchez ca fiind in stiva
     in_stack[node] = 1;
     st.push(node);
 
-    // cresc nivelul, deoarece vecinii lui node vor fi pe nivelul index + 1
-    index = index + 1;
+    // cresc timpul de start, deoarece vecinii lui node vor avea timpul de start
+    // current_start + 1
+    current_start = current_start + 1;
 
     for (int neighbour : adj[node]) {
       // am gasit un vecin nevizitat
-      if (idx[neighbour] == -1) {
-        tarjan(neighbour, index);
+      if (found[neighbour] == -1) {
+        tarjan(neighbour, current_start);
+
+        // updatez low_link:
+        // - low_link[node]  = timpul de start cel mai mic pe care NODE  il
+        // cunoaste
+        // - low_link[vecin] = timpul de start cel mai mic pe care VECIN il
+        // cunoaste
+        // Tot ce acceseaza vecin (Ex. vecin - ... - x) poate accesa si node
+        // (ex. node - vecin - ... - x)
         low_link[node] = min(low_link[node], low_link[neighbour]);
       } else {
+        // daca am gasit un vecin vizitat, care e deja in stiva
+        // verific daca timpul lui de start e mai mic decat
+        // timpul de start cel mai mic pe care il cunosc
         if (in_stack[neighbour] == 1) {
-          low_link[node] = min(low_link[node], idx[neighbour]);
+          low_link[node] = min(low_link[node], found[neighbour]);
         }
       }
     }
 
     // verific daca node este radacina a unei CTC
-    if (low_link[node] == idx[node]) {
+    if (low_link[node] == found[node]) {
       int current;
       vector<int> new_ctc;
 
@@ -121,7 +135,7 @@ private:
   void print_output() {
     // pentru verificare pe infoarena trebuie doar modificata afisarea
     cout << "Graful are " << ctc.size() << " componente tare conexe\n";
-    //cout << ctc.size() << "\n";
+    // cout << ctc.size() << "\n";
     int index = 1;
 
     for (vector<int> comp : ctc) {
@@ -144,8 +158,8 @@ int main() {
   cin.rdbuf(fin.rdbuf()); // save and redirect
 
   // las liniile urmatoare daca afisez in fisier
-  //ofstream fout("ctc.out");
-  //cout.rdbuf(fout.rdbuf()); //save and redirect
+  // ofstream fout("ctc.out");
+  // cout.rdbuf(fout.rdbuf()); //save and redirect
 
   // aici este rezolvarea propriu-zisa
   Task *task = new Task();
