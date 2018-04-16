@@ -1,0 +1,15 @@
+9 8
+1 2 
+1 3
+3 4
+3 5
+5 9
+4 6
+4 7
+4 8
+
+// acesta are continutul lui _example.in
+// se poate vizualiza graful in _example.png
+
+// pentru a verifica daca se detecteaza ciclul, de va adauga
+// muchi 6->1
