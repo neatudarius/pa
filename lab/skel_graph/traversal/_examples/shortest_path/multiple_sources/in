@@ -7,3 +7,11 @@
 ........
 ###...##
 ..P.....
+
+
+n = 8
+
+labyrinth[i][j] =
+    . => liber
+    # => obstacol
+    P => paznic
