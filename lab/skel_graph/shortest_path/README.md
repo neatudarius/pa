@@ -1,7 +1,7 @@
 ### shortest_path(s)
 
 #### context
-  * shortest_path(s) = drumul de lungime/cost minim de la o sursa/mai multe surse
+  * shortest_path(s) = drumul/drumurile de lungime/cost minim de la o sursa/mai multe surse
   					   la o destinatie/mai multe destinatii
 
 #### discutie

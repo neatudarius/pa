@@ -1,11 +1,12 @@
 ### spanning tree
 
+#### context
   * spanning tree               = arbore partial / arbore de acoperire
   * minimum spanning tree (MST) = arbore partial de cost minim (APM) / arbore minim de acoperire (AMA)
 
 Vom folosi notatia `APM`.
 
-Discutie:
+#### discutie
   * `arbore oarecare`
     * Graf in care nu avem costuri, atunci orice arbore partial este bun.
     * Solutie: `arbore de parcurgere DFS/BFS`
@@ -34,9 +35,11 @@ Discutie:
         * `S = O(n)` (heap)
 
 
-`infoarena`:
+#### infoarena
  - [apm](https://infoarena.ro/problema/apm)
 
+
+#### lab
 Toate pozele se gasesc in `_lab`.
 
 TODO: poze
