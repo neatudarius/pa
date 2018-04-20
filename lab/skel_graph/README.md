@@ -32,9 +32,9 @@ Pentru un algoritm X, repo-ul pune la dispozitie mai multe fisiere plasate undev
  - actualizare continut
    - deoarece se vor face modificari saptamanal (uneori zilnic), prima grija pe care trebuie sa o aveti atunci cand incepeti sa lucrati/sa intelegeti algoritmul X, este sa va asigurati ca aveti ultima versiune a lui
    - `git pull` va aduce ultima versiune de pe site
- - deschidere repo in `Sublime 3`
+ - deschidere repo in `Sublime 3` sau `Atom`
    - in radacina repoului se ruleaza comanda `subl .`
    - se observa ca a deschid tot repoul ca pe un folder
-   - partea misto este ca Sublime 3 iti poate deschide si pozele. In acest fel, poti accesa orice resursa ofera acest repo prin intermediul aceluiasi tool.
-   - un tutorial de instalare Sublime se gaseste in categoria colaborare
+   - partea misto este ca `Sublime 3` / `Atom` iti poate deschide si pozele. In acest fel, poti accesa orice resursa ofera acest repo prin intermediul aceluiasi tool.
+   - un tutorial de instalare `Sublime 3` / `Atom` se gaseste in categoria colaborare
 	
