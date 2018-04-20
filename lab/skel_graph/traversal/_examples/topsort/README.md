@@ -1,2 +1,5 @@
 ### topsort
-topsort (Topological Sort)
+
+  * topsort (Topological Sort) = sortare topologica
+
+  Se poate face cu DFS/BFS.
