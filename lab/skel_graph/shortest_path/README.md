@@ -39,8 +39,8 @@ Discutie:
     * Drum de la oricare nod din graf la oricare alt nod din graf.
     * Soltutie:`Roy-Floyd`:
     * `Complexitate`:
-      * `T = O(n ^ 3)`
-      * $S = O(n ^ 2)$ (d - distances) 
+      * `T = O(n^3)`
+      * `S = O(n^2)` (d - distances) 
   * `Surse multiple` si `destinatii multiple` in `graf rar`
     * Drum de la oricare nod din graf la oricare alt nod din graf.
     * Solutie: `Johnson`
