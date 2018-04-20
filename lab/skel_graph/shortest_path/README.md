@@ -3,7 +3,7 @@
   * shortest_path(s) = drumul de lungime/cost minim de la o sursa/mai multe surse
   					   la o destinatie/mai multe destinatii
 
-Discutie:
+# discutie
   * `Arbore`
     * Drum in arbore (drumul de la x la y este `unic`).
     * Solutie: `DFS/BFS`
@@ -26,8 +26,8 @@ Discutie:
     * Solutie: `Dijkstra`
     * Drum de la `o sursa` la `toate celelalte noduri`. Graful trebuie sa aiba `costuri pozive`.
   	* `Complexitate`: 
-  	  * `T = O(m log n)` (binary heap)
-  	    * Se poate obtine `T = O(n log n  + m)` daca se foloseste un `heap fibonacci` (nu implementam asa ceva). 
+  	  * `T = O(m * log n)` (binary heap)
+  	    * Se poate obtine `T = O(n * log n  + m)` daca se foloseste un `heap fibonacci` (nu implementam asa ceva). 
   	  * `S = O(n)` (heap)
   * `Sursa unica` si `graf fara cicluri de cost negativ`
     * Solutie: `Bellman-Ford`
@@ -46,7 +46,7 @@ Discutie:
     * Solutie: `Johnson`
     * `Complexitate`:
       * `T = O(n * m  * log n + n * m)` (binary heap)
-      	* `T = O(n^2 log n + n * m)` (fibonacci heap)
+      	* `T = O(n^2 * log n + n * m)` (fibonacci heap)
       	  * Aceasta implementare bate RoyFlod pe grafuri `rare`.
       * `S = O(n ^ 2)` (d - distances)
 
@@ -58,8 +58,7 @@ Toti algoritmii au ceva in comun:
     * pentru algoritmii cu o singura sursa: `p[i]` = parintele lui `i` de pe drumul minim de la `source` la nodul `i`
     * pentru algoritmii cu surse multiple:  `p[i][j]` = parintele lui `j` de pe drumul minim de la nodul `i` la nodul `j`
   
-
-`infoarena`:
+# infoarena
  - [dfs](https://infoarena.ro/problema/dfs)
  - [bfs](https://infoarena.ro/problema/bfs)
  - [sortaret](https://infoarena.ro/problema/sortaret)
