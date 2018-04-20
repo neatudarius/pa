@@ -58,3 +58,15 @@ Toti algoritmii au ceva in comun:
     * pentru algoritmii cu o singura sursa: `p[i]` = parintele lui `i` de pe drumul minim de la `source` la nodul `i`
     * pentru algoritmii cu surse multiple:  `p[i][j]` = parintele lui `j` de pe drumul minim de la nodul `i` la nodul `j`
   
+
+`infoarena`:
+ - [dfs](https://infoarena.ro/problema/dfs)
+ - [bfs](https://infoarena.ro/problema/bfs)
+ - [sortaret](https://infoarena.ro/problema/sortaret)
+ - [dijkstra](https://infoarena.ro/problema/dijkstra)
+ - [bellmanford](https://infoarena.ro/problema/bellmanford)
+ - [royfloyd](https://infoarena.ro/problema/royfloyd)
+
+Toate pozele se gasesc in `_lab`.
+
+TODO: poze
