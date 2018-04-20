@@ -46,6 +46,10 @@ private:
   // vector in care retin punctele de articulatie
   vector<int> cut_vertex;
 
+  // vector cu are marchez ca node este deja in cut_vertex
+  // (evit duplicatele)
+  vector<int> is_cv;
+
   // vector in care retin muchiile critice (puntile)
   vector<edge> critical_edges;
 
@@ -54,9 +58,12 @@ private:
 
   void read_input() {
     cin >> n >> m;
+
     found = vector<int>(n + 1, -1);
     low_link = vector<int>(n + 1, 0);
     parent = vector<int>(n + 1, 0);
+    is_cv = vector<int>(n + 1, 0);
+
     for (int i = 1; i <= m; ++i) {
       int x, y;
       cin >> x >> y;
@@ -127,7 +134,11 @@ private:
           // radacina este tratata separat (adica conditia de mai sus nu este
           // pentru radacina)
           if (parent[node] != 0) {
-            cut_vertex.push_back(node);
+            // am grija sa nu adaug duplicate in cut_vertex
+            if (!is_cv[node]) {
+              is_cv[node] = 1;
+              cut_vertex.push_back(node);
+            }
           }
 
           // daca am gasit un punct de articulatie inseamna ca am descoperit
@@ -155,7 +166,11 @@ private:
     // CUT VERTEX - caz 1:
     // daca nodul curent este radacina si are mai mult de 2 copii
     if (parent[node] == 0 && children >= 2) {
-      cut_vertex.push_back((node));
+      // am grija sa nu adaug duplicate in cut_vertex
+      if (!is_cv[node]) {
+        is_cv[node] = 1;
+        cut_vertex.push_back(node);
+      }
     }
   }
 
