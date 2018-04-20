@@ -4,7 +4,10 @@
 	- in adancime 
 	- in latime   
 
-DFS (Depth-First Search)   = parcurgere in adancime
-BFS (Breadth-First Search) = parcurgere in latime
+  * DFS (Depth-First Search)   = parcurgere in adancime
+  * BFS (Breadth-First Search) = parcurgere in latime
 
-![Graph Intro - overview](_lab/traversal-01.jpg)
+ Toate pozele se gasesc in `_lab`.
+
+
+ <img src="_lab/traversal-01.jpg" height="100%" width="100%"/>

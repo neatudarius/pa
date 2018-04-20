@@ -1,2 +1,3 @@
 ### SCC
-SCC (Strongly Connected Components)
+
+  * SCC (Strongly Connected Components) = Componente Tare-Conexe
