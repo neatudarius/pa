@@ -35,14 +35,14 @@ Discutie:
     * `Complexitate`:
       * `T = O(n * m)`
       * `S = O(n)` (coada)
-  * `Surse multiple` si `destinatii multiple`
-    * Soltutie:`Roy-Floyd`:
+  * `Surse multiple` si `destinatii multiple` in `graf dens`
     * Drum de la oricare nod din graf la oricare alt nod din graf.
+    * Soltutie:`Roy-Floyd`:
     * `Complexitate`:
       * `T = O(n ^ 3)`
       * $S = O(n ^ 2)$ (d - distances) 
-  * `Surse multiple` si `destinatii multiple`
-    * Daca graful este rar.
+  * `Surse multiple` si `destinatii multiple` in `graf rar`
+    * Drum de la oricare nod din graf la oricare alt nod din graf.
     * Solutie: `Johnson`
     * `Complexitate`:
       * `T = O(n * m  * log n + n * m)` (binary heap)
