@@ -26,7 +26,8 @@ Discutie:
     * Solutie: `Dijkstra`
     * Drum de la `o sursa` la `toate celelalte noduri`. Graful trebuie sa aiba `costuri pozive`.
   	* `Complexitate`: 
-  	  * `T = O(m log n)`
+  	  * `T = O(m log n)` (binary heap)
+  	    * Se poate obtine `T = O(n log n  + m)` daca se foloseste un `heap fibonacci` (nu implementam asa ceva). 
   	  * `S = O(n)` (heap)
   * `Sursa unica` si `graf fara cicluri de cost negativ`
     * Solutie: `Bellman-Ford`
@@ -38,12 +39,15 @@ Discutie:
     * Soltutie:`Roy-Floyd`:
     * Drum de la oricare nod din graf la oricare alt nod din graf.
     * `Complexitate`:
-      * `T = O(n ^3)`
-      * `S = O(n ^ 2)` (d - distances) 
-  * 
+      * `T = O(n ^ 3)`
+      * $S = O(n ^ 2)$ (d - distances) 
+  * `Surse multiple` si `destinatii multiple`
+    * Daca graful este rar.
     * Solutie: `Johnson`
     * `Complexitate`:
-      * `T = O(n^2 log n + n * m)` (fibonacci heap)
+      * `T = O(n * m  * log n + n * m)` (binary heap)
+      	* `T = O(n^2 log n + n * m)` (fibonacci heap)
+      	  * Aceasta implementare bate RoyFlod pe grafuri `rare`.
       * `S = O(n ^ 2)` (d - distances)
 
 Toti algoritmii au ceva in comun:
