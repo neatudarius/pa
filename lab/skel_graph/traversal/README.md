@@ -5,3 +5,5 @@
 	- in latime   - BFS
 
     In _examples/ se vor adauga exemple cu aplicatii pentru algoritmii studiati.
+
+![Graph Intro - overview](_lab/traversal-01.jpg)
