@@ -3,7 +3,7 @@
   * shortest_path(s) = drumul de lungime/cost minim de la o sursa/mai multe surse
   					   la o destinatie/mai multe destinatii
 
-# discutie
+#### discutie
   * `Arbore`
     * Drum in arbore (drumul de la x la y este `unic`).
     * Solutie: `DFS/BFS`
@@ -58,13 +58,16 @@ Toti algoritmii au ceva in comun:
     * pentru algoritmii cu o singura sursa: `p[i]` = parintele lui `i` de pe drumul minim de la `source` la nodul `i`
     * pentru algoritmii cu surse multiple:  `p[i][j]` = parintele lui `j` de pe drumul minim de la nodul `i` la nodul `j`
   
-# infoarena
+#### infoarena
  - [dfs](https://infoarena.ro/problema/dfs)
  - [bfs](https://infoarena.ro/problema/bfs)
  - [sortaret](https://infoarena.ro/problema/sortaret)
  - [dijkstra](https://infoarena.ro/problema/dijkstra)
  - [bellmanford](https://infoarena.ro/problema/bellmanford)
  - [royfloyd](https://infoarena.ro/problema/royfloyd)
+
+
+#### lab
 
 Toate pozele se gasesc in `_lab`.
 
