@@ -6,6 +6,6 @@
 
   * BCC (BiConnected Component) =  componente biconexe/biconectate
 
-
-![Tarjan - overview 01/02](_lab/tarjan-01.jpg?raw=true "Tarjan - overview 01/02")
-![Tarjan - overview 02/02](_lab/tarjan-02.jpg?raw=true "Tarjan - overview 02/02")
+ Toate pozele se gasesc in `_lab`.
+ <img src="_lab/tarjan-01.jpg" height="100%" width="100%"/>
+ <img src="_lab/tarjan-02.jpg" height="100%" width="100%"/>
