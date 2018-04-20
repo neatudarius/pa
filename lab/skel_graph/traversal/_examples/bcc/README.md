@@ -1,8 +1,10 @@
 ### CV + CE + BCC
 
-CV  (Cut Vertex)            =  punct critic / punct de articulatie
-CE  (Critical Edege)        =  muchie critica / punte   
-BCC (BiConnected Component) =  componente biconexe/biconectate
+  * CV  (Cut Vertex)            =  punct critic / punct de articulatie
+
+  * CE  (Critical Edege)        =  muchie critica / punte
+
+  * BCC (BiConnected Component) =  componente biconexe/biconectate
 
 
 ![Tarjan - overview 01/02](_lab/tarjan-01.jpg?raw=true "Tarjan - overview 01/02")
