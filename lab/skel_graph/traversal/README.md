@@ -2,9 +2,7 @@
 
 #### context	
 	
-Cele doua modalitati de a traversa un graf:
-	- in adancime 
-	- in latime
+Cele doua modalitati de a traversa un graf: in adancime sau in latime.
 
   * DFS (Depth-First Search)   = parcurgere in adancime
   * BFS (Breadth-First Search) = parcurgere in latime
