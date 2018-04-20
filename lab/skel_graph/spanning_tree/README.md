@@ -1,6 +1,7 @@
 ### spanning tree
 
 #### context
+
   * spanning tree               = arbore partial / arbore de acoperire
   * minimum spanning tree (MST) = arbore partial de cost minim (APM) / arbore minim de acoperire (AMA)
 

@@ -1,9 +1,10 @@
 ### skel_graph/traversal
 
 #### context	
-	Cele doua modalitati de a traversa un graf:
+	
+Cele doua modalitati de a traversa un graf:
 	- in adancime 
-	- in latime   
+	- in latime
 
   * DFS (Depth-First Search)   = parcurgere in adancime
   * BFS (Breadth-First Search) = parcurgere in latime
