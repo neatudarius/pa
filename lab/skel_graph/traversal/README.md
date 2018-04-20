@@ -7,3 +7,5 @@
     In _examples/ se vor adauga exemple cu aplicatii pentru algoritmii studiati.
 
 ![Graph Intro - overview](_lab/traversal-01.jpg)
+![Graph Intro - overview](_lab/traversal-02.jpg)
+![Graph Intro - overview](_lab/traversal-03.jpg)
