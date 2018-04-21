@@ -28,12 +28,16 @@ private:
   // n = numar de noduri, m = numar de muchii
   int n, m;
 
+  // source = sursa din Dijkstra
   int source;
 
   // adj[i] contine perechi de tipul : vecin , costul muchiei i -> vecin
   vector<pair<int, int>> adj[NMAX];
 
-  // say something
+  // min-heap ce contine perechi de tipul: distanta de la source la
+  // nodul x, nodul x
+  // folosit pentru e extrage la fiecare pas nodul care are costul
+  // estimat minim fata de sursa
   priority_queue<pair<int, int>, vector<pair<int, int>>,
                  std::greater<pair<int, int>>>
       pq;
@@ -66,9 +70,9 @@ private:
     }
   }
 
-  void get_result() { Dijkstra(source); }
+  void get_result() { Dijkstra(source, d, p); }
 
-  void Dijkstra(int source) {
+  void Dijkstra(int source, vector<int> &d, vector<int> &p) {
     // ETAPA 1
     for (int i = 1; i <= n; ++i) {
       // presupun ca nu am drum
@@ -158,6 +162,10 @@ private:
   void print_output() {
     for (int i = 1; i <= n; ++i) {
       if (i == source) {
+        continue;
+      }
+      if (d[i] == 0) {
+        cout << "Nu exista drum de la " << source << " la nodul " << i << '\n';
         continue;
       }
       cout << "Distanta minima de la nodul " << source << " la nodul " << i
