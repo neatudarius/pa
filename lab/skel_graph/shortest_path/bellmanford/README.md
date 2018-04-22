@@ -10,4 +10,4 @@
   
 
 #### lab
- <img src="_example.png" height="100%" width="100%"/>
+ <img src="_example.gif" height="100%" width="100%"/>
