@@ -1,20 +1,3 @@
-### max_flow
-
-#### descriere
-  * Flux maxim intr-o retea de transport
-    * Solutie: `Edmonds Karp` 
-`
-    * Gaseste mereu o cale de ameliorare. Creste fluxul pe aceasta. Cand nu mai gaseste o astfel de cale, fluxul prin retea este maxim.
-
-  	* `Complexitate`: 
-  	  * `T = O(n * m^2)` 
-  	  * `S = O(n ^ 2)`
-
-#### lab
- <img src="_example.png" height="100%" width="100%"/>
-
-
-``` cpp
 // pompeaza flux maxim de la sursa S la terminalul T
 int Edmonds-Karp(G(V, E), S, T) {
 	// initial nu am flux in retea
@@ -48,4 +31,3 @@ int Edmonds-Karp(G(V, E), S, T) {
 	// nu s-a mai gasit drum de ameliorare, atunci fluxul din retea e maxim
 	return maxFlow;
 }
-```
