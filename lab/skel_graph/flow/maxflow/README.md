@@ -11,7 +11,7 @@
   	  * `S = O(n ^ 2)`
 
   	* [Wikipedia example](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example)
-
+  	* [Material infoarena](https://infoarena.ro/downloads?action=download&file=flux_maxim_in_retele.doc&safe_only=false)
 
 ``` cpp
 // pompeaza flux maxim de la sursa S la terminalul T
