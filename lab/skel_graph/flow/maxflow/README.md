@@ -47,7 +47,3 @@ int Edmonds-Karp(G(V, E), S, T) {
 	// nu s-a mai gasit drum de ameliorare, atunci fluxul din retea e maxim
 	return maxFlow;
 }
-```
-#### lab
- <img src="_example.png" height="100%" width="100%"/>
-
