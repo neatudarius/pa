@@ -10,7 +10,7 @@
   	  * `T = O(n * m^2)` 
   	  * `S = O(n ^ 2)`
 
-  	*[Wikipedia example](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example)
+  	* [Wikipedia example](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example)
 
 
 ``` cpp
