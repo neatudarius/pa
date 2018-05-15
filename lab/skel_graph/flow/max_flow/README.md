@@ -2,7 +2,7 @@
 
 #### descriere
   * Flux maxim intr-o retea de transport
-    * Solutie: `Edmonds Karp` - 
+    * Solutie: `Edmonds Karp` 
 `
     * Gaseste mereu o cale de ameliorare. Creste fluxul pe aceasta. Cand nu mai gaseste o astfel de cale, fluxul prin retea este maxim.
 
