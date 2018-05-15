@@ -1,160 +1,172 @@
 // Copyright 2018 Darius Neatu <neatudarius@gmail.com>
 
-/*
-    skel_graph - MaxFlow (Ford-Fulkerson) - O(N*M^2)
-    http://www.infoarena.ro/problema/maxflow
+// Edmonds-Karp - O(n * m^2)
+// http://www.infoarena.ro/problema/maxflow
 
-    source = sursa
-    sink = destinatie
-*/
+// Aceasta sursa ia 70p pe infoarena: https://infoarena.ro/job_detail/2204311
+// Este suficient pentru PA!
 
-#include <algorithm>
-#include <bitset>
-#include <cassert>
-#include <cstdio>
-#include <cstring>
-#include <fstream>
-#include <iostream>
-#include <queue>
-#include <vector>
-#define NMAX 1009    // ATENTIE la cat e in problema curenta !!!
-#define oo (1 << 30) // ATENTIE la cat e in problema curenta !!!
+#include <bits/stdc++.h>
 using namespace std;
 
-// citire doar pt infoarena
-ifstream in("maxflow.in");
-ofstream out("maxflow.out");
-#define cin in
-#define cout out
+const int kNmax = 1005;
+const int kInf = (1 << 30);
 
-int n, m;
-vector<int> G[NMAX];
-
-// BFS
-int p[NMAX];
-queue<int> Q;
-
-// maxflow
-int flow[NMAX][NMAX], cap[NMAX][NMAX];
-// cap[i][j] = capacitatea maxima a fluxului de pe muchia i->j
-// flow[i][j] = fluxul curent de pe muchia i -> j (flow[i][j] <= cap[i][j])
-
-void read_input() {
-  cin >> n >> m;
-
-  for (int i = 1; i <= m; ++i) {
-    int x, y, c;
-    cin >> x >> y >> c;
-
-    G[x].push_back(y);
-    G[y].push_back(x);
-    cap[x][y] += c;
-  }
-}
-
-// BFS de la source la sink
-// returneaza true daca a reusit sa se ajunga la sink (adica am cel putin un
-// drum de ameliorare)
-bool BFS(int source, int sink) {
-  // ETAPA 1
-  for (int i = 1; i <= n; ++i) {
-    p[i] = oo;
+class Task {
+public:
+  void solve() {
+    read_input();
+    print_output(get_result());
   }
 
-  // ETAPA 2
-  Q.push(source);
-  p[source] = 0;
+private:
+  int n, m;
+  vector<int> adj[kNmax];
 
-  // ETAPA 3
-  while (!Q.empty()) {
-    int node = Q.front();
-    Q.pop();
+  // p[node] = parintele lui node din parcurgerea BFS
+  int p[kNmax];
 
-    // drum de ameliorare terminat, nu trebuie sa mai fac nimic cu acest drum
-    if (node == sink) {
-      continue;
+  // sursa si destinatia din retea
+  int source, sink;
+
+  // cap[i][j] = capacitatea muchiei i->j
+  int cap[kNmax][kNmax];
+
+  // flow[i][j] = fluxul curent pe muchia i->j
+  // ATENTIE! Mereu flow[i][j] = -flow[j][i]
+  int flow[kNmax][kNmax];
+
+  void read_input() {
+    cin >> n >> m;
+    source = 1;
+    sink = n;
+
+    memset(cap, 0, sizeof cap); // retea cu toate cacitatile initial pe 0
+
+    for (int i = 1, x, y, z; i <= m; ++i) {
+      cin >> x >> y >> z;
+      adj[x].push_back(y);
+      adj[y].push_back(x);
+
+      cap[x][y] += z;
     }
+  }
 
-    for (auto it = G[node].begin(); it != G[node].end(); ++it) {
-      int neighbour = *it;
+  int get_result() { return get_maxflow(source, sink); }
 
-      // neighbour nu a fost deja folosit in alt drum de ameliorare in BFS-ul
-      // curent
-      // si muchia node->neighbour nu e saturata (mai accepta flux)
-      if (p[neighbour] == oo && flow[node][neighbour] < cap[node][neighbour]) {
-        p[neighbour] = node;
-        Q.push(neighbour);
+  int get_maxflow(int source, int sink) {
+    cout << "get_maxflow from " << source << " to " << sink << "\n\n";
+
+    // nu am bagat flux in retea...
+    int maxFlow = 0;
+    memset(flow, 0, sizeof flow);
+
+    // cat timp se gaseste un drum VALID de la source la sink
+    while (BFS(source, sink)) {
+      print_path(source, sink);
+
+      // parcurg drumul: d = sink <- x <- ... <- source (il am inversat)
+      // minFlow = min(cap[ parent ][ node ] - flow[ parent ][ node ])
+      // unde node <- parent este o muchie de pe drumul d
+      int minFlow = kInf;
+      for (int node = sink; node != source; node = p[node]) {
+        int available_flow = cap[p[node]][node] - flow[p[node]][node];
+        minFlow = min(minFlow, available_flow);
       }
-    }
-  }
 
-  // ETAPA 4 - verifica daca sink a fost atins <=> are parinte
-  return p[sink] != oo;
-}
+      // DACA se poate baga pe acest drum cel putin o unitate de flux
+      if (minFlow >= 1) {
+        cout << "increment flow with " << minFlow << "\n\n";
+        maxFlow += minFlow; // il vom baga
 
-void MaxFlow(int source, int sink) {
-  int maxFlow = 0;
-
-  // repeta cat timp exista drum/drumuri de ameliorare de la source la sink
-  while (BFS(source, sink)) {
-    // pentru fiecare drum de ameliorare POSIBIL de forma source -> ... ->
-    // *it->sink
-    for (auto it = G[sink].begin(); it != G[sink].end(); ++it) {
-      // *it a fost folosit intr-un drum de ameliorare in BFS-ul curent
-      // si muchia *it->sink nu e saturata (mai accepta flux - adica drumul se
-      // termina in sink, nu mai devreme)
-      if (p[*it] != oo && flow[*it][sink] < cap[*it][sink]) {
-        p[sink] = *it; // atunci *it e parintele lui sink
-
-        int minFlow = oo; // fluxul minim de pe acest drum (minimul dintre
-                          // fluxurile acceptate de muchiile de pe drum)
+        // actualizez drumul
         for (int node = sink; node != source; node = p[node]) {
-          int parent = p[node],
-              available_flow = cap[parent][node] - flow[parent][node];
-
-          minFlow = min(minFlow, available_flow);
-        }
-
-        // daca minFlow == 0, inseamna ca pe acel drum exista cel putin o muchie
-        // saturata
-        // daca minFlow > 0, toate muchiile de pe drum sunt nesaturate, deci
-        // poti creste fluxul de pe tot drumul
-        // cu minFlow unitati
-        if (minFlow > 0) {
-          maxFlow += minFlow;
-
-          for (int node = sink; node != source; node = p[node]) {
-            int parent = p[node];
-
-            // in sens direct cresc fluxul
-            flow[parent][node] += minFlow;
-
-            // in sens opus il scad
-            flow[node][parent] -= minFlow;
-          }
+          flow[p[node]][node] += minFlow; // adaug fluxul pe muchia de pe drum
+          flow[node][p[node]] -= minFlow; // scad  fluxul in sens invers
         }
       }
     }
+
+    return maxFlow;
   }
 
-  cout << maxFlow << "\n";
-}
+  // gaseste drum VALID de la source la sink
+  // drum valid == drum pt care capacitatea reziduala a fiecarui arc este strict
+  // pozitiva
+  // a.k.a. cap[i][j] - flow[i][j] > 0, pentru arcul i->j
+  //         (muchia i->j nu e saturata)
+  bool BFS(int source, int sink) {
+    queue<int> Q;
 
-// in solve scriu tot ce tine de rezolvare - e ca un main
-void solve() { MaxFlow(1, n); }
+    // initializare vector parinti din BFS
+    for (int i = 1; i <= n; ++i) {
+      p[i] = -1; // nimeni nu are parinte
+    }
 
-// puteti pastra main-ul mereu cum e acum
+    // sursa este radacina in arborele BFS - singura cu parinte 0
+    Q.push(source);
+    p[source] = 0;
+
+    while (!Q.empty()) {
+      int node = Q.front();
+      Q.pop();
+
+      for (auto &x : adj[node]) {
+        // daca x NU are parinte si muchia node->x NU este saturata
+        if (p[x] == -1 && flow[node][x] < cap[node][x]) {
+          p[x] = node;
+          Q.push(x);
+        }
+      }
+    }
+
+    // returnez TRUE daca se poate ajunge se la source la sink
+    return p[sink] != -1;
+  }
+
+  void print_path(int source, int sink) {
+    vector<int> path;
+    for (int node = sink; node != source; node = p[node]) {
+      path.push_back(node);
+    }
+    path.push_back(source);
+
+    reverse(path.begin(), path.end());
+
+    cout << "path: ";
+    for (auto &node : path) {
+      cout << node << " ";
+    }
+    cout << "\n";
+  }
+
+  void print_output(int result) { cout << "maxflow = " << result << "\n"; }
+};
+
 int main() {
-  // las linia urmatoare daca citesc din fisier
-  // assert( freopen("maxflow.in", "r", stdin) != NULL);
+  // din cauza ca fac redirectari, salvez starea lui cin si cout
+  auto cin_buff = cin.rdbuf();
+  auto cout_buff = cout.rdbuf();
 
-  // las linia urmatoare daca afisez in fisier
-  // assert( freopen("maxflow.out", "w", stdout) != NULL) ;
+  // las liniile urmatoare daca citesc din fisier
+  ifstream fin("maxflow.in");
+  cin.rdbuf(fin.rdbuf()); // save and redirect
 
-  read_input();
-  solve();
+  // las liniile urmatoare daca afisez in fisier
+  // ofstream fout("maxflow.out");
+  // cout.rdbuf(fout.rdbuf()); // save and redirect
+
+  // aici este rezolvarea propriu-zisa
+  Task *task = new Task();
+  task->solve();
+  delete task;
+
+  // restore pentru cin si cout
+  cin.rdbuf(cin_buff);
+  cout.rdbuf(cout_buff);
+
+  // obs. nu e nevoie sa inchid fisierele
+  // cand se apeleaza destructorii pentru fin si fout se vor inchide
 
   return 0;
 }
-
-// http://www.infoarena.ro/job_detail/1970265
