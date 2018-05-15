@@ -10,6 +10,9 @@
   	  * `T = O(n * m^2)` 
   	  * `S = O(n ^ 2)`
 
+  	*[Wikipedia example](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example)
+
+
 ``` cpp
 // pompeaza flux maxim de la sursa S la terminalul T
 int Edmonds-Karp(G(V, E), S, T) {
@@ -45,8 +48,6 @@ int Edmonds-Karp(G(V, E), S, T) {
 	return maxFlow;
 }
 ```
-
 #### lab
  <img src="_example.png" height="100%" width="100%"/>
 
-[https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example](wiki)
