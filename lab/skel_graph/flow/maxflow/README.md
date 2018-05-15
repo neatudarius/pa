@@ -46,7 +46,8 @@ int Edmonds-Karp(G(V, E), S, T) {
 }
 ```
 
-
+$$
 #### lab
  <img src="_example.png" height="100%" width="100%"/>
 
+[[https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm#Example | wiki ]]
