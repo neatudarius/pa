@@ -8,3 +8,8 @@
 6 7 1
 7 8 1
 2 7 1
+
+
+fluxul maxim se obtine daca am pompa cate o unitate prin drumurile
+1->2->3->4->8
+1->5->6->7->8
