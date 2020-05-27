@@ -30,7 +30,7 @@ private:
     vector<int> adj[NMAX];
 
     // bcc[i] = componenta biconexa cu indicele i
-        vector<vector<int>> bcc;
+    vector<vector<int>> bcc;
 
     // stiva folosita pentru a reconstrui componentele biconexe
     stack<edge> sc;
@@ -75,8 +75,7 @@ private:
         }
     }
 
-    void get_result() { 
-        tarjan(); }
+    void get_result() { tarjan(); }
 
     void tarjan()
     {
