@@ -27,44 +27,44 @@ private:
     int n, m;
 
     // adj[node] lista de adiacenta a nodului node pentru graful initial
-    vector<int> adj[NMAX];
+    std::vector<int> adj[NMAX];
 
     // bcc[i] = componenta biconexa cu indicele i
-    vector<vector<int>> bcc;
+    std::vector<std::vector<int>> bcc;
 
     // stiva folosita pentru a reconstrui componentele biconexe
-    stack<edge> sc;
+    std::stack<edge> sc;
 
     // ordinea de vizitare
     // found[node] = timpul de start a lui node in parcurgerea DFS
     // in laborator found se numeste idx
-    vector<int> found;
+    std::vector<int> found;
 
     // low_link[node] = min { found[x] | x este accesibil din node }
     // adica timpul minim al unui nou
-    vector<int> low_link;
+    std::vector<int> low_link;
 
-    // vector in care retin punctele de articulatie
-    vector<int> cut_vertex;
+    // std::vector in care retin punctele de articulatie
+    std::vector<int> cut_vertex;
 
-    // vector cu are marchez ca node este deja in cut_vertex
+    // std::vector cu are marchez ca node este deja in cut_vertex
     // (evit duplicatele)
-    vector<int> is_cv;
+    std::vector<int> is_cv;
 
-    // vector in care retin muchiile critice (puntile)
-    vector<edge> critical_edges;
+    // std::vector in care retin muchiile critice (puntile)
+    std::vector<edge> critical_edges;
 
     // parent[i] = parintele nodului i
-    vector<int> parent;
+    std::vector<int> parent;
 
     void read_input()
     {
         cin >> n >> m;
 
-        found = vector<int>(n + 1, -1);
-        low_link = vector<int>(n + 1, 0);
-        parent = vector<int>(n + 1, 0);
-        is_cv = vector<int>(n + 1, 0);
+        found = std::vector<int>(n + 1, -1);
+        low_link = std::vector<int>(n + 1, 0);
+        parent = std::vector<int>(n + 1, 0);
+        is_cv = std::vector<int>(n + 1, 0);
 
         for (int i = 1; i <= m; ++i) {
             int x, y;
@@ -180,7 +180,7 @@ private:
     void get_bcc(edge target_edge)
     {
         // construim o noua componenta biconexa
-        vector<int> current_bcc;
+        std::vector<int> current_bcc;
 
         // extragem muchii din stiva pana am extras muchia E
         edge current_edge = edge(-1, -1);
@@ -196,7 +196,7 @@ private:
         }
 
         // trebuie sa eliminam duplicatele
-        // vom sorta vectorul si vom folosi functia unique
+        // vom sorta std::vectorul si vom folosi functia unique
         // pentru detalii, vezi: http://en.cppreference.com/w/cpp/algorithm/unique
         sort(current_bcc.begin(), current_bcc.end());
         auto it = unique(current_bcc.begin(), current_bcc.end());
