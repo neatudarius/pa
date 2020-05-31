@@ -1,4 +1,4 @@
-### compiler
+### Compiler
 
 Recomandam sa instalati g++-7 pentru a va asigura exemplele de cod modificate sunt compatibile cu vmchecker.
 
@@ -13,27 +13,44 @@ darius@pc ~ $ g++ -v
 gcc version 7.2.0 (Ubuntu 7.2.0-1ubuntu1~16.04)
 ```
 
+### Code format
 
-### editor
+`clang-format` (versiunea 11)
+```
+wget https://apt.llvm.org/llvm.sh
+sudo chmod +x ./llvm.sh
+sudo ./llvm.sh 11
+```
 
-Recomandam sa folositi `Sublime 3` / `Atom` pentru a putea accesa toate resursele din repo prin acelasi tool.
+
+### Editor
+
+Recomandam sa folositi `VSCode` / `Sublime 3` / `Atom` pentru a putea accesa toate resursele din repo prin acelasi tool.
+  * instalare `VSCode`
+```
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt-get udpate
+sudo apt install code
+```
+    Cheatsheet: CTRL+SHIFT+I pentru autoindentare conform regulilor din .clang-format.
 
   *  instalare `Sublime 3`
-   ```
-   sudo add-apt-repository ppa:webupd8team/sublime-text-3
-   sudo apt-get update
-   sudo apt-get install sublime-text-installer
-   ```
-   
+```
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text-installer
+```
+
   *  instalare `Atom`
-   ```
-   sudo add-apt-repository ppa:webupd8team/atom
-   sudo apt-get update
-   sudo apt-get install atom
-   ```
+```
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
+sudo apt-get install atom
+```
 
   *  rulare
-  ` subl .` / `atom .`
- 
+    `code .` / ` subl .` / `atom .`
+
   *  se poate da click pe orice fisier pentru deschidere, inclusiv poze!
 
