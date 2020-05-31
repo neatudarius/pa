@@ -11,7 +11,6 @@
 #include <bits/stdc++.h>
 
 #define NMAX 100010
-using namespace std;
 
 class Task {
 public:
