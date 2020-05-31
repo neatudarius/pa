@@ -40,11 +40,11 @@ int main() {
     auto cout_buff = std::cout.rdbuf();
 
     // las liniile urmatoare daca citesc din fisier
-    ifstream fin("in");
+    std::ifstream fin("in");
     std::cin.rdbuf(fin.rdbuf()); // save and redirect
 
     // las liniile urmatoare daca afisez in fisier
-    // ofstream fout("out");
+    // std::ofstream fout("out");
     // std::cout.rdbuf(fout.rdbuf()); //save and redirect
 
     // aici este rezolvarea propriu-zisa
