@@ -17,7 +17,7 @@
 |10^2 | O(n^3) |
 |10 | O(n!) / O(2^n) / O(3^n) |
 | 15 | O(n!) / O(2^n) |
-| 30 - 40 (par) | O((n/2)!) / O(2 ^ n/2) (Meet in the middle) |
+| 30 - 40 (par) | O((n/2)!) / O(2 ^ (n/2)) (Meet in the middle) |
 
 **Ideal: O(1)**
 
