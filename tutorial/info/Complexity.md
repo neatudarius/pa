@@ -1,4 +1,4 @@
-# Complexitati cheatsheet
+# Cheatsheet complexitati
 
 ## Clase de complexitati
 
