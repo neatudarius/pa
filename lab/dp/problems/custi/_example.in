@@ -1,0 +1,16 @@
+se citeste dimensiunea n a matricei patratice
+5
+
+se citeste matricea de input
+1 1 1 0 0
+1 1 0 1 1
+1 1 1 1 1
+1 1 1 0 0
+1 1 1 0 0
+
+rezultatul final pentru acest set de intrare va fi:
+18 (custile de dimensiune 1 x 1)
+7  (custile de dimensiune 2 x 2)
+1  (custile de dimensiune 3 x 3)
+0  (custile de dimensiune 4 x 4)
+0  (custile de dimensiune 5 x 5)
