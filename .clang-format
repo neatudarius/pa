@@ -1,0 +1,26 @@
+BasedOnStyle: Webkit
+
+AlignAfterOpenBracket: DontAlign
+AlignConsecutiveAssignments: true
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: Right
+AlignOperands: AlignAfterOperator
+AlignTrailingComments: true
+AllowAllArgumentsOnNextLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: All
+BinPackArguments: true
+BinPackArguments: true
+BreakBeforeBraces: Attach
+Cpp11BracedListStyle: true
+ColumnLimit: 120
+Language: Cpp
+NamespaceIndentation: None
+SpaceAfterTemplateKeyword: false
+SpaceBeforeCpp11BracedList: false
+SortIncludes: false
+Standard: Latest
+TabWidth: 4
+UseTab: Never
