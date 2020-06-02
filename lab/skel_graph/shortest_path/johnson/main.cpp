@@ -82,8 +82,8 @@ private:
             // la el trecand prin nodul node
             // for (auto &edge : adj[node]) {
             for (int i = 1; i <= n; ++i) {
-                int neighbour = i;            // edge.first;
-                int cost_edge = adj[node][i]; // edge.second;
+                int neighbour = i;
+                int cost_edge = adj[node][i];
 
                 // Daca obtinem un cost mai mic trecand prin node
                 if (d[node] + cost_edge < d[neighbour]) {
@@ -183,8 +183,6 @@ private:
     }
 
     void print_output(bool negative_cycle) {
-        // ofstream fout ("johnson.out");
-        // ofstream fout ("royfloyd.out");
         if (negative_cycle) {
             cout << "S-a gasit un ciclu negativ";
             return;
