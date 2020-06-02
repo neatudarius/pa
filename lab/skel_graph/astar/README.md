@@ -1,6 +1,6 @@
 ### A*
 
-#### descriere
+#### Descriere
 
  In principiu, orice algoritm pe grafuri discutat in laboratoarele si cursurile anterioare poate fi utilizat pentru gasirea solutiei unei probleme astfel definite. In practica, insa, multi dintre acesti algoritmi nu sunt utilizati in acest context, fie pentru ca exploreaza mult prea multe noduri, fie pentru ca nu garanteaza o solutie pentru grafuri definite implicit (prin stare initiala si functie de expandare). 
 
