@@ -12,11 +12,9 @@
 
 #include <bits/stdc++.h>
 
-#define NMAX      50010     // ATENTIE la cat e in problema curenta !!!
+#define NMAX      110       // ATENTIE la cat e in problema curenta !!!
 #define oo        (1 << 30) // ATENTIE la cat e in problema curenta !!!
 #define NO_PARENT (-1)
-
-using namespace std;
 
 class Task {
 public:
@@ -33,11 +31,11 @@ private:
     int adj[NMAX][NMAX];
 
     void read_input() {
-        cin >> n;
+        std::cin >> n;
         for (int x = 1; x <= n; ++x) {
             for (int y = 1; y <= n; ++y) {
-                int c; // x -> y, of cost c
-                cin >> c;
+                int c; // x -> y, de cost c
+                std::cin >> c;
                 if (c == 0) {
                     c = oo;
                 }
@@ -48,11 +46,12 @@ private:
 
     bool get_result() { return Johnson(); }
 
-    void Dijkstra(int source, vector<int>& d) {
+    void Dijkstra(int source, std::vector<int>& d) {
         // Min-heap ce contine perechi de tipul: distanta source -> x
         // Folosit pentru a extrage la fiecare pas nodul care are costul
         // estimat minim fata de sursa
-        priority_queue<pair<int, int>, vector<pair<int, int>>, std::greater<pair<int, int>>> pq;
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int, int>>>
+            pq;
 
         // Presupunem ca nu exista drum de la source la i
         for (int i = 1; i <= n; ++i) {
@@ -80,7 +79,6 @@ private:
 
             // Pentru fiecare vecin incercam sa relaxam costul de la sursa
             // la el trecand prin nodul node
-            // for (auto &edge : adj[node]) {
             for (int i = 1; i <= n; ++i) {
                 int neighbour = i;
                 int cost_edge = adj[node][i];
@@ -97,12 +95,12 @@ private:
         }
     }
 
-    bool BellmanFord(int source, vector<int>& d) {
+    bool BellmanFord(int source, std::vector<int>& d) {
         // Coada folosita la algoritmul BellmanFord
-        queue<int> q;
+        std::queue<int> q;
 
         // used[i] = de cate ori a fost folosit nodul i
-        vector<int> used(n + 2, 0);
+        std::vector<int> used(n + 2, 0);
 
         // Presupunem ca nu exista drum de la source la i
         for (int i = 1; i <= n + 1; ++i) {
@@ -143,6 +141,7 @@ private:
             }
         }
 
+        // Nu s-a gasit ciclu de cost negativ, costurile au putut fi calculate.
         return false;
     }
 
@@ -153,10 +152,13 @@ private:
         }
 
         // Initializam vectorul pe care il vom trimite la BellmanFord cu valoarea oo
-        vector<int> vertex_weight(n + 2, oo);
+        std::vector<int> h(n + 2, oo);
+
+        // Setam n + 1 ca sursa pentru BellmanFord
+        int source = n + 1;
 
         // Aplicam BellmanFord cu noul nod ca sursa pentru a afla costurile nodurilor
-        bool neg_cycle = BellmanFord(n + 1, vertex_weight);
+        bool neg_cycle = BellmanFord(source, h);
 
         // Daca s-a gasit un ciclu negativ, oprim algoritmul
         if (neg_cycle) {
@@ -166,33 +168,34 @@ private:
         // Aflam noile costuri ale muchiilor
         for (int i = 1; i <= n + 1; ++i) {
             for (int j = 1; j <= n + 1; ++j) {
-                adj[i][j] += (vertex_weight[i] - vertex_weight[j]);
+                adj[i][j] += (h[i] - h[j]);
             }
         }
 
         // Aplicam Dijkstra din fiecare nod pentru a afla distantele
-        vector<int> current_dijkstra(n + 1, oo);
         for (int i = 1; i <= n; ++i) {
-            Dijkstra(i, current_dijkstra);
+            std::vector<int> d(n + 1, oo);
+            Dijkstra(i, d);
             for (int j = 1; j <= n; ++j) {
-                adj[i][j] = current_dijkstra[j];
+                adj[i][j] = d[j];
             }
         }
 
+        // Nu s-a gasit ciclu de cost negativ, costurile au putut fi calculate.
         return false;
     }
 
     void print_output(bool negative_cycle) {
         if (negative_cycle) {
-            cout << "S-a gasit un ciclu negativ";
+            std::cout << "S-a gasit un ciclu negativ";
             return;
         }
 
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= n; ++j) {
-                cout << adj[i][j] << " ";
+                std::cout << adj[i][j] << " ";
             }
-            cout << "\n";
+            std::cout << "\n";
         }
     }
 };
