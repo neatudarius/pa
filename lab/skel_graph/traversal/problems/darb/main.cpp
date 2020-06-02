@@ -1,10 +1,8 @@
 // Copyright 2020 Cristian Olaru <cristianolaru99@gmail.com>
-// Copyright 2020 Darius Neatu <neatudarius@gmail.com>
 
 // Diametrul unui arbore (DARB) - Diameter of a tree
 // Se folosesc 2 parcurgeri in latime (BFS) - O(n + m)
-// Obs: Problema se poate rezolva similar
-// si cu 2 parcurgeri in adancime (DFS)
+// Obs: Problema se poate rezolva similar si cu 2 parcurgeri in adancime (DFS)
 
 // Exemplificare si testare:
 // https://infoarena.ro/problema/darb
@@ -17,13 +15,13 @@
 #define kInf (1 << 30) // infinit pe 32 biti
 
 class Task {
-public:
+ public:
     void solve() {
         read_input();
         print_output(get_result());
     }
 
-private:
+ private:
     // n = numar de noduri, m = numar de muchii
     int n, m;
 
@@ -31,11 +29,10 @@ private:
     std::vector<int> adj[NMAX];
 
     void read_input() {
-        // citesc numar de noduri
         std::cin >> n;
 
         // citesc n - 1 muchii, deoarece este un arbore
-        for (int i = 1; i <= n - 1; ++i) {
+        for (int i = 1; i < n; ++i) {
             int x, y;
             std::cin >> x >> y; // citesc muchia x-y
 
@@ -75,34 +72,34 @@ private:
         return diameter;
     }
 
-    // aplica BFS pe un graf - viziteaza ce este accesibil din sursa s
+    // aplica BFS pe un graf - viziteaza ce este accesibil din sursa source
     int bfs(int source, std::vector<int> &d) {
         // Step 0: declaram o coada in care putem baga noduri
-        std::queue<int> Q;
+        std::queue<int> q;
 
         // Step 1: initializare distante & parinti
         for (int i = 1; i <= n; ++i) {
             d[i] = kInf;      // presupun ca nu am drum
         }
 
-        // Step 2: pasul initial: cunosc sursa s, o adaug in coada
-        Q.push(source);
+        // Step 2: pasul initial: cunosc sursa source, o adaug in coada
+        q.push(source);
         d[source] = 0; // distanta de la source la source e 0
 
-        // Step 3: parcurg in latime graful pornind din s
-        while (!Q.empty()) {
+        // Step 3: parcurg in latime graful pornind din ssource
+        while (!q.empty()) {
             // 3.1: SCOT primul nod din coada
-            int node = Q.front();
-            Q.pop();
+            int node = q.front();
+            q.pop();
 
             // 3.2 Ii parcurg toti vecinii
-            for (auto &it : adj[node]) {
+            for (auto &neighbour : adj[node]) {
                 // daca se poate ajunge pe un drum mai scurt, aleg acest drum
                 // constanta + 1 < kInf => gasesc drumul optim
-                if (d[node] + 1 < d[it]) {
-                    d[it] = d[node] + 1; // actualizez distanta
+                if (d[node] + 1 < d[neighbour]) {
+                    d[neighbour] = d[node] + 1; // actualizez distanta
 
-                    Q.push(it); // pun vecinul in coada
+                    q.push(neighbour); // pun vecinul in coada
                 }
             }
         }
@@ -123,13 +120,12 @@ private:
             }
         }
 
-        // returnam nodul cel mai indepartat
+        // returnam nodul cel mai indepartat de source
         return max;
     }
 
     void print_output(int result) {
-        // afisez rezultatul obtinut
-        std::cout << result;
+        std::cout << result << "\n";
     }
 };
 
