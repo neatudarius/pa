@@ -31,6 +31,7 @@ class Task {
 
     // matrice de tupluri <f, g, h> pentru fiecare valoare din matrice
     std::vector<std::vector<std::tuple<double, double, double>>> fgh;
+    
 
 
     void read_input() {

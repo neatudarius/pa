@@ -4,13 +4,9 @@
 
  In principiu, orice algoritm pe grafuri discutat in laboratoarele si cursurile anterioare poate fi utilizat pentru gasirea solutiei unei probleme astfel definite. In practica, insa, multi dintre acesti algoritmi nu sunt utilizati in acest context, fie pentru ca exploreaza mult prea multe noduri, fie pentru ca nu garanteaza o solutie pentru grafuri definite implicit (prin stare initiala si functie de expandare). 
 
- 
-
   * Algoritm euristic pentru determinarea distantei minime
     * Solutie: `A* `
 
-
-    
   	* `Complexitate (depinde de tipul euristicii)`:
 
       * daca `|h(n) - h*(n)| ≤ O(logh*(n))`, atunci si exista un singur nod destinatie, atunci avem o complexitate polinomiala O(n ^ k).
@@ -73,3 +69,4 @@ A*(s_i, expand, h, is_goal)
  
     // nu a fost gasita o cale de la s_i la o stare goal s
     return failure
+
