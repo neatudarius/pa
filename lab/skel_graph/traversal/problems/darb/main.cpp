@@ -86,7 +86,7 @@ class Task {
         q.push(source);
         d[source] = 0; // distanta de la source la source e 0
 
-        // Step 3: parcurg in latime graful pornind din ssource
+        // Step 3: parcurg in latime graful pornind din source
         while (!q.empty()) {
             // 3.1: SCOT primul nod din coada
             int node = q.front();
