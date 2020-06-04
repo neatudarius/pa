@@ -1,0 +1,14 @@
+3 3 2
+1 2
+3 2
+
+Pentru acest input se construieste urmatoarea matrice de coeficienti:
+1 0 1
+1 1 1
+1 0 1
+
+Cuvinte cu o singura litera: C ^ 0 = I3 => 3 Cuvinte
+
+Cuvinte cu 2 litere: C ^ 1 = C => 7 Cuvinte
+
+Cuvinte cu 3 litere: C ^ 2 = { {2 0 2}, {3 1 3}, {2 0 2}} => 15 cuvinte, raspuns final.
