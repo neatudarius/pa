@@ -4,15 +4,13 @@
 // BFS din mai multe surse
 
 // Complexitate O(N ^ 2)
+// N este dimensiunea matricei
 
 // https://infoarena.ro/problema/muzeu
 
 #include <bits/stdc++.h>
-
-
 #define KMAX 300
 #define kInf (1 << 30)
-
 
 class Task {
     // coada cu nodurile ce urmeaza a fi explorate
@@ -57,6 +55,13 @@ class Task {
         }
     }
 
+    // Solutia problemei se bazeaza pe aplicarea unui BFS modificat, ce contine
+    // initial in coada mai multe noduri, intrucat cautam distanta minima intre
+    // orice paznic si fiecare celula din matrice. Asadar, in loc de a face un
+    // (numar paznic) BFS-uri, se va face unul singur. Si practic unele celule
+    // pot fi vizitate de un numar mai mare de paznici, dar distanta pana la 
+    // aceasta va fi modificata doar de primul paznic care ajunge la ea, daca
+    // acest lucru este posibil.
     void get_result() {
         // Cat timp mai sunt noduri de vizitat
         while (!explore.empty()) {
