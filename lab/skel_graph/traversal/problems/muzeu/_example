@@ -1,0 +1,23 @@
+N = 8
+Matricea citita este :
+...#....
+#..#..#.
+.##.P..#
+..#.#.#.
+........
+........
+###...##
+..P.....
+Observ ca am 2 paznici, unul la coordonatele (3, 5) si altul la coordonatele
+(8,3), deci acolo vor fi distante nule. Toate celule marcate cu # sunt camere
+blocate, deci nu voi putea ajunge la ele, deci vor fi marcate cu -2. Se face
+simultan BFS din celula (3, 5) si celula (8, 3), ajungandu-se la distantele:
+
+-1 -1 -1 -2  2  3  4  5
+-2 -1 -1 -2  1  2 -2  6
+ 8 -2 -2  1  0  1  2 -2
+ 7  6 -2  2 -2  2 -2  6
+ 6  5  4  3  4  3  4  5
+ 6  5  4  3  4  4  5  6
+-2 -2 -2  2  3  4 -2 -2
+ 2  1  0  1  2  3  4  5
