@@ -28,12 +28,6 @@ Constraints
 
 Pentru toate restrictiile (si, sj), avem 1 ≤ i, j ≤ M.
 
-Operatia a modulo b reprezinta restul impartirii lui a la b.
-
-Operatia modulo (notata si ca %) are urmatoarele proprietati:
-
-(a+b)%c = ((a%c) + (b%c)) % c
-(a*b)%c = ((a%c) * (b%c)) % c
 Timp C++: 1s; Java: 2s
 
 Output Format

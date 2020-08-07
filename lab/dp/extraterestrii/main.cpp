@@ -76,7 +76,7 @@ class Task {
         return sol;
     }
 
-    void multiply_matrix(Matrix A, Matrix B, Matrix &C) {
+    void multiply_matrix(const Matrix &A, const Matrix &B, Matrix &C) {
         // functia este din lab 4: 
         // https://ocw.cs.pub.ro/courses/pa/laboratoare/laborator-04#gardurile_lui_gigel_optimizare
         // functia va primi referinta matricei C pentru a intoarce rezultatul final in C
@@ -116,7 +116,7 @@ class Task {
         multiply_matrix(C, tmp, R);
     }
 
-    int sum_elements(Matrix C) {
+    int sum_elements(const Matrix &C) {
         // functie care calculeaza suma elementelor unei matrice
         long long sum = 0;
         for (int i = 1; i <= m; ++i) {
@@ -139,8 +139,8 @@ int main() {
     auto cout_buff = std::cout.rdbuf();
 
     // las liniile urmatoare daca citesc din fisier
-    std::ifstream fin("extraterestrii.in");
-    std::cin.rdbuf(fin.rdbuf()); // save and redirect
+    // std::ifstream fin("extraterestrii.in");
+    // std::cin.rdbuf(fin.rdbuf()); // save and redirect
 
     // las liniile urmatoare daca afisez in fisier
     // std::ofstream fout("extraterestrii.out");
