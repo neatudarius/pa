@@ -139,8 +139,8 @@ int main() {
     auto cout_buff = std::cout.rdbuf();
 
     // las liniile urmatoare daca citesc din fisier
-    // std::ifstream fin("extraterestrii.in");
-    // std::cin.rdbuf(fin.rdbuf()); // save and redirect
+    std::ifstream fin("extraterestrii.in");
+    std::cin.rdbuf(fin.rdbuf()); // save and redirect
 
     // las liniile urmatoare daca afisez in fisier
     // std::ofstream fout("extraterestrii.out");
