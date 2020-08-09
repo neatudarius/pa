@@ -32,7 +32,7 @@ class Task {
 
     // multimea nodurilor closed
     std::unordered_set<Cell> closed;
-    std::set<double, Cell> openlist; 
+    std::set<double, Cell> open; 
 
     // dictionar de parinti
     std::unordered_map<Cell, Cell> parent;
@@ -124,19 +124,19 @@ class Task {
         auto comparator = [](auto x1, auto x2) { return x1.first > x2.first; };
 
         //  set cu nodurile in curs de explorare
-        std::set<std::pair<double, Cell>, decltype(comparator)> openlist(comparator);
+        std::set<std::pair<double, Cell>, decltype(comparator)> open(comparator);
 
         g[start_state] = 0.0;
         h[start_state] = euclidian_distance_heuristic(start_state);
         f[start_state] = g[start_state] + h[start_state];
         // adaugare nod atat in lista de open, cat si in coada de prioritati.
-        openlist.insert({f[start_state], start_state});
+        open.insert({f[start_state], start_state});
 
         // parcurgerea continua cat timp avem noduri in open
-        while (!openlist.empty()) {
+        while (!open.empty()) {
             // extrage nodul s cu f(s) minim
-            auto s = (*(openlist.begin())).second;
-            openlist.erase(openlist.begin());
+            auto s = (*(open.begin())).second;
+            open.erase(open.begin());
             // daca s este stare finala
             if (is_goal(s)) {
                 return true;
@@ -153,19 +153,19 @@ class Task {
                         parent[c] = s;
                         // daca nodul c nu a mai fost intalnit
                         if (!(closed.find(c) != closed.end()
-                                || std::find_if(openlist.begin(), openlist.end(), [&c](auto& p) {
+                                || std::find_if(open.begin(), open.end(), [&c](auto& p) {
                                        return p.second == c;
-                                   }) != openlist.end())) {
+                                   }) != open.end())) {
                             h[c] = euclidian_distance_heuristic(c);
                             f[c] = g[c] + h[c];
                             // c intra in open
-                            openlist.insert({f[c], c});
+                            open.insert({f[c], c});
                             // daca nodul c a mai fost expandat
                         } else if (closed.find(c) != closed.end()) {
                             // c trece din closed in open
                             int h_new = euclidian_distance_heuristic(c);
                             int f_new = h_new + g[c];
-                            openlist.insert({f_new, c});
+                            open.insert({f_new, c});
                             closed.erase(c);
                         }
                     }
