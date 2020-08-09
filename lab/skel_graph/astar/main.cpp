@@ -3,9 +3,7 @@
 // Algoritmul A* - complexitate O(b ^ d), b = branching factor, d = depth.
 
 #include <bits/stdc++.h>
-#define get_f(t) std::get<0>(t);
-#define get_g(t) std::get<1>(t);
-#define get_h(t) std::get<2>(t);
+
 
 using Cell = std::pair<int, int>;
 
@@ -34,6 +32,7 @@ class Task {
 
     // multimea nodurilor closed
     std::unordered_set<Cell> closed;
+    std::set<double, Cell> openlist; 
 
     // dictionar de parinti
     std::unordered_map<Cell, Cell> parent;
@@ -124,7 +123,7 @@ class Task {
         // functie lambda pentru a compara doua perechi
         auto comparator = [](auto x1, auto x2) { return x1.first > x2.first; };
 
-        //  priority queue cu nodurile in curs de explorare
+        //  set cu nodurile in curs de explorare
         std::set<std::pair<double, Cell>, decltype(comparator)> openlist(comparator);
 
         g[start_state] = 0.0;
