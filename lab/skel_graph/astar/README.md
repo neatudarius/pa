@@ -24,7 +24,7 @@ Pseudocod:
 // is_goal  = is_goal(n) returneaza true daca n este o destinatie (stare goal/finala)
 // w        = w[x][y] reprezinta costul muchiei directe intre starile x si y
 A*(s_i, expand, h, is_goal)
-	//initializari
+	// initializari
     closed ← {}     // multimea nodurilor expandate
     open   ← { }    // multimea nodurilor in curs de explorare
  

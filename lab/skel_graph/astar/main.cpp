@@ -4,7 +4,6 @@
 
 #include <bits/stdc++.h>
 
-
 using Cell = std::pair<int, int>;
 
 namespace std {
