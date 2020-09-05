@@ -14,11 +14,11 @@
 
 class Task {
     // coada cu nodurile ce urmeaza a fi explorate
-    std::queue<std::pair<int, int>> explore;
+    std::queue<std::pair<int, int>> q;
     // vector de distante, nu am nevoie de matricea de caractere
-    // distances[i][j] = distanta de la cel mai apropiat paznic la celula
+    // d[i][j] = distanta de la cel mai apropiat paznic la celula
     // din matrice de coordonate i j.
-    int distances[KMAX][KMAX];
+    int d[KMAX][KMAX];
     // cele 4 directii in care pot merge prin matrice
     std::vector<std::pair<int, int>> directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     // dimensiunea muzeului
@@ -37,17 +37,17 @@ class Task {
                 case '#':
                     // Intalnesc un blocaj, niciun paznic nu poate ajunge
                     // aici, distanta va fi -2.
-                    distances[i][j] = -2;
+                    d[i][j] = -2;
                     break;
                 case 'P':
                     // Exista un paznic in camera, distanta pana la el e 0.
-                    distances[i][j] = 0;
+                    d[i][j] = 0;
                     // Fiind paznic, adaug coordonatele lui in coada.
-                    explore.push({i, j});
+                    q.push({i, j});
                     break;
                 default:
                     // Caz cu . , camera in care nu se afla paznic.
-                    distances[i][j] = kInf;
+                    d[i][j] = kInf;
                     break;
                 }
             }
@@ -63,23 +63,23 @@ class Task {
     // acest lucru este posibil.
     void get_result() {
         // Cat timp mai sunt noduri de vizitat
-        while (!explore.empty()) {
+        while (!q.empty()) {
             // Iau primul nod de explorat
-            auto node = explore.front();
-            explore.pop();
+            auto node = q.front();
+            q.pop();
             // Pentru fiecare directie posibila in care pot merge
-            for (auto const& direction : directions) {
+            for (auto const& [dx, dy] : directions) {
                 // Iau noile coordonate
-                int newX            = node.first + direction.first;
-                int newY            = node.second + direction.second;
-                int parent_distance = distances[node.first][node.second];
+                int new_x           = node.first + dx;
+                int new_y           = node.second + dy;
+                int parent_distance = d[node.first][node.second];
                 // Daca coordonatele pe care testez sunt valide si nu am o
                 // distanta anterioara
-                if (newX >= 1 && newX <= n && newY >= 1 && newY <= n && distances[newX][newY] == kInf) {
+                if (new_x >= 1 && new_x <= n && new_y >= 1 && new_y <= n && d[new_x][new_y] == kInf) {
                     // S-a gasit o cale catre nodul respectiv.
-                    distances[newX][newY] = parent_distance + 1;
+                    d[new_x][new_y] = parent_distance + 1;
                     // Pun nodul in coada, pentru a fi explorat.
-                    explore.push({newX, newY});
+                    q.push({new_x, new_y});
                 }
             }
         }
@@ -88,7 +88,7 @@ class Task {
     void print_output() {
         for (int i = 1; i <= n; ++i) {
             for (int j = 1; j <= n; ++j) {
-                std::cout << (distances[i][j] != kInf ? distances[i][j] : -1) << ' ';
+                std::cout << (d[i][j] != kInf ? d[i][j] : -1) << ' ';
             }
             std::cout << "\n";
         }
