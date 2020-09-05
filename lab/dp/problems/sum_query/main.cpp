@@ -8,7 +8,7 @@
 #include <bits/stdc++.h>
 
 class Task {
-    // N si M sunt dimensiunile matricei, K e numarul de query-uri
+    // n si m sunt dimensiunile matricei, k e numarul de query-uri
     int n, m, k;
 
     // matricea citita
