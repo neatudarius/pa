@@ -1,7 +1,7 @@
 // Copyright 2020 Nichita Radu <radunichita99@gmail.com>
 
-// SumQuery - Programare dinamica
-// Complexitate O(M * N)
+// SumQuery - DP
+// Complexitate O(n * m)
 
 // https://leetcode.com/problems/range-sum-query-2d-immutable/
 
@@ -9,36 +9,35 @@
 
 class Task {
     // N si M sunt dimensiunile matricei, K e numarul de query-uri
-    int N, M, K;
+    int n, m, k;
 
-    // matricea de elemente
+    // matricea citita
     std::vector<std::vector<int>> matrix;
 
-    // query-urile de forma <(start_x, start,y), (finish_x), (finish_y)>.
+    // query-uri de forma <(x, y), (p, q)>.
     std::vector<std::pair<std::pair<int, int>, std::pair<int, int>>> queries;
 
-    // pe pozitia [i][j] am suma elementelor submatricei (1,1) pana la (i, j).
+    // dp[i][j] = suma elementelor submatricei (1, 1) - (i, j). 
     std::vector<std::vector<int>> dp;
 
-    // vectorul se solutii
+    // vectorul de solutii
     std::vector<int> solution;
 
     void read_input() {
-        std::cin >> N >> M >> K;
-        matrix = std::vector<std::vector<int>>(N + 1, std::vector<int>(M + 1, 0));
-        dp     = std::vector<std::vector<int>>(N + 1, std::vector<int>(M + 1, 0));
+        std::cin >> n >> m >> k;
+        matrix = std::vector<std::vector<int>>(n + 1, std::vector<int>(m + 1, 0));
+        dp     = std::vector<std::vector<int>>(n + 1, std::vector<int>(m + 1, 0));
 
-        for (int i = 1; i <= M; i++) {
-            for (int j = 1; j <= N; j++) {
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
                 std::cin >> matrix[i][j];
             }
         }
 
-        queries = std::vector<std::pair<std::pair<int, int>, std::pair<int, int>>>(K);
-        for (int i = 0; i < K; i++) {
-            int start_x, start_y, finish_x, finish_y;
-            std::cin >> start_x >> start_y >> finish_x >> finish_y;
-            queries[i] = {{start_x, start_y}, {finish_x, finish_y}};
+        for (int i = 0; i < k; i++) {
+            int x, y, p, q;
+            std::cin >> x >> y >> p >> q;
+            queries.push_back({{x, y}, {p, q}});
         }
         return;
     }
@@ -61,20 +60,20 @@ class Task {
     // similar (doar ca pe coloane) pentru a calcula rezultatul dorit.
 
     void compute_sum_matrix() {
-        for (int i = 1; i <= N; i++) {
-            for (int j = 1; j <= M; j++) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
                 dp[i][j] += dp[i][j - 1] + matrix[i][j];
             }
         }
 
-        for (int j = 1; j <= M; j++) {
-            for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= m; j++) {
+            for (int i = 1; i <= n; i++) {
                 dp[i][j] += dp[i - 1][j];
             }
         }
     }
 
-    void show_matrix(const std::vector<std::vector<int>> matrix) {
+    void show_matrix(const std::vector<std::vector<int>> &matrix) {
         for (auto const& line : matrix) {
             for (auto const& elem : line) {
                 std::cout << elem << " ";
@@ -83,19 +82,19 @@ class Task {
         }
     }
 
-    // pentru a calcula suma elementelor dintre colturile stanga-sus (r1,c1) si
-    // dreapta jos (r2,c2) aplicam un principiu similar calcularii ariei unui
+    // pentru a calcula suma elementelor dintre colturile stanga-sus (x, y) si
+    // dreapta jos (p, q) aplicam un principiu similar calcularii ariei unui
     // dreptunghi prin scadere de dreptunghiuri. Adica, pentru a calcula suma
     // dorita ar trebui sa scadem din patratul de coordonate (1, 1)->(r2,c2)
     // patratele mai mici, dupa cum urmeaza:
     // +---------------+   +--------------+   +---------------+   +--------------+   +--------------+
     // |               |   |         |    |   |   |           |   |         |    |   |   |          |
-    // |   (r1,c1)     |   |         |    |   |   |           |   |         |    |   |   |          |
+    // |   (x, y)      |   |         |    |   |   |           |   |         |    |   |   |          |
     // |   +------+    |   |         |    |   |   |           |   +---------+    |   +---+          |
-    // |   |      |    | = |         |    | - |   |           | - |      (r1,c2) | + |   (r1,c1)    |
+    // |   |      |    | = |         |    | - |   |           | - |      (x, q ) | + |   (x ,y )    |
     // |   |      |    |   |         |    |   |   |           |   |              |   |              |
     // |   +------+    |   +---------+    |   +---+           |   |              |   |              |
-    // |        (r2,c2)|   |       (r2,c2)|   |   (r2,c1)     |   |              |   |              |
+    // |        (p ,q )|   |       (p, q) |   |   (p, y)      |   |              |   |              |
     // +---------------+   +--------------+   +---------------+   +--------------+   +--------------+
     void get_result() {
         compute_sum_matrix();
