@@ -1,0 +1,14 @@
+8 6
+n = 8 - demensiunea parcului
+m = 6 - numarul de copaci
+
+coordonatele la care se afla cei m copaci
+2 7
+3 3
+4 6
+5 4
+7 3
+7 5
+
+coordonatele portii de start si finish
+1 1 8 8
